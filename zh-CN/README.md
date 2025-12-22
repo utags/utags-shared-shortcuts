@@ -24,3 +24,11 @@
 | 知识     | `search_group_knowledge.json` |       3        | `["*"]` |  2025-12-22  | [Raw](https://raw.githubusercontent.com/utags/utags-shared-shortcuts/main/zh-CN/search_group_knowledge.json) |
 | 学术     | `search_group_scholar.json`   |       4        | `["*"]` |  2025-12-22  | [Raw](https://raw.githubusercontent.com/utags/utags-shared-shortcuts/main/zh-CN/search_group_scholar.json)   |
 | 购物     | `search_group_shopping.json`  |       4        | `["*"]` |  2025-12-22  | [Raw](https://raw.githubusercontent.com/utags/utags-shared-shortcuts/main/zh-CN/search_group_shopping.json)  |
+
+## 导入后效果
+
+![screenshot](https://wsrv.nl/?url=https://raw.githubusercontent.com/utags/userscripts/main/assets/screenshot-2025-12-22-16-56-24.png)
+![screenshot](https://wsrv.nl/?url=https://raw.githubusercontent.com/utags/userscripts/main/assets/screenshot-2025-12-22-13-59-40.png)
+![screenshot](https://wsrv.nl/?url=https://raw.githubusercontent.com/utags/userscripts/main/assets/screenshot-2025-12-22-16-56-11.png)
+![screenshot](https://wsrv.nl/?url=https://raw.githubusercontent.com/utags/userscripts/main/assets/screenshot-2025-12-22-16-52-20.png)
+![screenshot](https://raw.githubusercontent.com/utags/userscripts/main/assets/screenshot-2025-12-22-17-03-52.gif)
