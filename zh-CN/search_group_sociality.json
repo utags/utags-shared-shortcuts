@@ -1,0 +1,48 @@
+{
+  "id": "search_group_sociality",
+  "name": "社交",
+  "icon": "lucide:users",
+  "match": [
+    "*"
+  ],
+  "defaultOpen": "new-tab",
+  "collapsed": false,
+  "itemsPerRow": 3,
+  "items": [
+    {
+      "id": "weibo_social",
+      "name": "微博",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://s.weibo.com/weibo/{selected||query||current_title||t:utags}"
+    },
+    {
+      "id": "tieba_social",
+      "name": "贴吧",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://tieba.baidu.com/f/search/res?ie=utf-8&qw={selected||query||current_title||t:utags}"
+    },
+    {
+      "id": "instagram_social",
+      "name": "Instagram",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://www.instagram.com/explore/tags/{selected||query||current_title||t:utags}/"
+    },
+    {
+      "id": "x_social",
+      "name": "X",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://x.com/search?q={selected||query||current_title||t:utags}"
+    },
+    {
+      "id": "facebook_social",
+      "name": "Facebook",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://www.facebook.com/search/top/?q={selected||query||current_title||t:utags}"
+    }
+  ]
+}

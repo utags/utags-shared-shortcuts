@@ -1,0 +1,41 @@
+{
+  "id": "search_group_shopping",
+  "name": "购物",
+  "icon": "lucide:shopping-cart",
+  "match": [
+    "*"
+  ],
+  "defaultOpen": "new-tab",
+  "collapsed": false,
+  "itemsPerRow": 3,
+  "items": [
+    {
+      "id": "taobao_shopping",
+      "name": "淘宝",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://s.taobao.com/search?q={selected||query||current_title||t:utags}"
+    },
+    {
+      "id": "jd_shopping",
+      "name": "京东",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://search.jd.com/Search?keyword={selected||query||current_title||t:utags}"
+    },
+    {
+      "id": "amazon_shopping",
+      "name": "亚马逊",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://www.amazon.cn/s?k={selected||query||current_title||t:utags}"
+    },
+    {
+      "id": "smzdm_shopping",
+      "name": "什么值得买",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://search.smzdm.com/?c=home&s={selected||query||current_title||t:utags}"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "search_group_translate",
+  "name": "翻译",
+  "icon": "lucide:languages",
+  "match": [
+    "*"
+  ],
+  "defaultOpen": "new-tab",
+  "collapsed": false,
+  "itemsPerRow": 3,
+  "items": [
+    {
+      "id": "google_translate",
+      "name": "Google",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://translate.google.com/?sl=auto&tl=zh-CN&text={selected||query||current_title||t:utags}&op=translate"
+    },
+    {
+      "id": "baidu_translate",
+      "name": "百度",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://fanyi.baidu.com/#auto/zh/{selected||query||current_title||t:utags}"
+    },
+    {
+      "id": "deepl_translate",
+      "name": "DeepL",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://www.deepl.com/translator?share=generic#en/zh-hans/{selected||query||current_title||t:utags}"
+    },
+    {
+      "id": "youdao_translate",
+      "name": "有道",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://dict.youdao.com/result?word={selected||query||current_title||t:utags}&lang=en"
+    },
+    {
+      "id": "bing_translate",
+      "name": "Bing",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://www.bing.com/dict/search?q={selected||query||current_title||t:utags}&FORM=HDRSC6"
+    }
+  ]
+}

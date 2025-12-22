@@ -1,0 +1,55 @@
+{
+  "id": "search_group_video",
+  "name": "视频",
+  "icon": "lucide:video",
+  "match": [
+    "*"
+  ],
+  "defaultOpen": "new-tab",
+  "collapsed": false,
+  "itemsPerRow": 3,
+  "items": [
+    {
+      "id": "youtube_video",
+      "name": "YouTube",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://www.youtube.com/results?search_query={selected||query||current_title||t:utags}"
+    },
+    {
+      "id": "bilibili_video",
+      "name": "Bilibili",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://search.bilibili.com/all?keyword={selected||query||current_title||t:utags}"
+    },
+    {
+      "id": "youku_video",
+      "name": "优酷",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://so.youku.com/search_video/q_{selected||query||current_title||t:utags}"
+    },
+    {
+      "id": "iqiyi_video",
+      "name": "爱奇艺",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://www.iqiyi.com/search/{selected||query||current_title||t:utags}.html"
+    },
+    {
+      "id": "tencent_video",
+      "name": "腾讯视频",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://v.qq.com/x/search/?q={selected||query||current_title||t:utags}&queryFrom=0"
+    },
+    {
+      "id": "douyin_video",
+      "name": "抖音",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://www.douyin.com/search/{selected||query||current_title||t:utags}?type=general"
+    }
+  ]
+}

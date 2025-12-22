@@ -1,0 +1,69 @@
+{
+  "id": "search_group_image",
+  "name": "图片",
+  "icon": "lucide:image",
+  "match": [
+    "*"
+  ],
+  "defaultOpen": "new-tab",
+  "collapsed": false,
+  "itemsPerRow": 3,
+  "items": [
+    {
+      "id": "google_image",
+      "name": "Google",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://www.google.com/search?q={selected||query||current_title||t:utags}&udm=2"
+    },
+    {
+      "id": "baidu_image",
+      "name": "百度",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://image.baidu.com/search/index?tn=baiduimage&word={selected||query||current_title||t:utags}"
+    },
+    {
+      "id": "bing_image",
+      "name": "Bing",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://www.bing.com/images/search?q={selected||query||current_title||t:utags}"
+    },
+    {
+      "id": "360_image",
+      "name": "360",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://image.so.com/i?q={selected||query||current_title||t:utags}"
+    },
+    {
+      "id": "duckduckgo_image",
+      "name": "DuckDuckGo",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://duckduckgo.com/?q={selected||query||current_title||t:utags}&ia=images&iax=images"
+    },
+    {
+      "id": "yandex_image",
+      "name": "Yandex",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://yandex.com/images/search?from=tabbar&text={selected||query||current_title||t:utags}"
+    },
+    {
+      "id": "pixiv_image",
+      "name": "Pixiv",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://www.pixiv.net/search.php?s_mode=s_tag&word={selected||query||current_title||t:utags}"
+    },
+    {
+      "id": "huaban_image",
+      "name": "花瓣",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://huaban.com/search/?q={selected||query||current_title||t:utags}"
+    }
+  ]
+}

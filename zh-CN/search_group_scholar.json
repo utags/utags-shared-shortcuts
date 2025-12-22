@@ -1,0 +1,41 @@
+{
+  "id": "search_group_scholar",
+  "name": "学术",
+  "icon": "lucide:graduation-cap",
+  "match": [
+    "*"
+  ],
+  "defaultOpen": "new-tab",
+  "collapsed": false,
+  "itemsPerRow": 3,
+  "items": [
+    {
+      "id": "google_scholar",
+      "name": "谷歌学术",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://scholar.google.com/scholar?hl=zh-CN&q={selected||query||current_title||t:utags}"
+    },
+    {
+      "id": "baidu_scholar",
+      "name": "百度学术",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://xueshu.baidu.com/ndscholar/browse/search?wd={selected||query||current_title||t:utags}"
+    },
+    {
+      "id": "cnki_scholar",
+      "name": "知网",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://kns.cnki.net/kns8s/defaultresult/index?kw={selected||query||current_title||t:utags}"
+    },
+    {
+      "id": "wanfang_scholar",
+      "name": "万方",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://s.wanfangdata.com.cn/paper?q={selected||query||current_title||t:utags}"
+    }
+  ]
+}

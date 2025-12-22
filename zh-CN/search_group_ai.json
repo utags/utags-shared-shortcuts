@@ -1,0 +1,83 @@
+{
+  "id": "search_group_ai",
+  "name": "AI Chat",
+  "icon": "lucide:bot",
+  "match": [
+    "*"
+  ],
+  "defaultOpen": "new-tab",
+  "collapsed": false,
+  "itemsPerRow": 3,
+  "items": [
+    {
+      "id": "chatgpt_ai",
+      "name": "ChatGPT",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://chatgpt.com/?q={selected||query||current_title||t:utags}"
+    },
+    {
+      "id": "gemini_ai",
+      "name": "Gemini",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://gemini.google.com/app?q={selected||query||current_title||t:utags}"
+    },
+    {
+      "id": "claude_ai",
+      "name": "Claude",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://claude.ai/"
+    },
+    {
+      "id": "doubao_ai",
+      "name": "豆包",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://www.doubao.com/chat/"
+    },
+    {
+      "id": "kimi_ai",
+      "name": "Kimi",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://kimi.moonshot.cn/"
+    },
+    {
+      "id": "deepseek_ai",
+      "name": "DeepSeek",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://chat.deepseek.com/"
+    },
+    {
+      "id": "perplexity_ai",
+      "name": "Perplexity",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://www.perplexity.ai/search?q={selected||query||current_title||t:utags}"
+    },
+    {
+      "id": "metaso_ai",
+      "name": "秘塔AI",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://metaso.cn/?q={selected||query||current_title||t:utags}"
+    },
+    {
+      "id": "felo_ai",
+      "name": "Felo",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://felo.ai/search?q={selected||query||current_title||t:utags}"
+    },
+    {
+      "id": "genspark_ai",
+      "name": "Genspark",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://genspark.ai/search?query={selected||query||current_title||t:utags}"
+    }
+  ]
+}
