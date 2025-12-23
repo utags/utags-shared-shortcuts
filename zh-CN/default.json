@@ -1,0 +1,54 @@
+{
+  "id": "default_group",
+  "name": "常用",
+  "icon": "lucide:folder",
+  "match": [
+    "*"
+  ],
+  "defaultOpen": "same-tab",
+  "items": [
+    {
+      "id": "default_home",
+      "name": "首页",
+      "icon": "lucide:home",
+      "type": "url",
+      "data": "/",
+      "openIn": "same-tab"
+    },
+    {
+      "id": "default_google",
+      "name": "Google 搜索",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://www.google.com/search?q={selected||current_title||t:utags}",
+      "openIn": "new-tab"
+    },
+    {
+      "id": "default_gemini",
+      "name": "Gemini",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://gemini.google.com/app",
+      "openIn": "new-tab"
+    },
+    {
+      "id": "default_site_search",
+      "name": "站内搜索",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://www.google.com/search?q=site:{hostname_without_www}%20{selected||current_title}",
+      "openIn": "new-tab"
+    },
+    {
+      "id": "default_greasyfork_search",
+      "name": "搜索本站的油猴脚本",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://greasyfork.org/scripts/by-site/{hostname_top_level}?filter_locale=0",
+      "openIn": "new-tab"
+    }
+  ],
+  "collapsed": false,
+  "itemsPerRow": 1,
+  "hidden": false
+}

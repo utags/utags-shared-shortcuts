@@ -1,0 +1,43 @@
+{
+  "id": "community_group",
+  "name": "社区",
+  "icon": "lucide:users",
+  "match": [
+    "*"
+  ],
+  "defaultOpen": "new-tab",
+  "items": [
+    {
+      "id": "community_v2ex",
+      "name": "V2EX",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://www.v2ex.com/",
+      "openIn": "new-tab"
+    },
+    {
+      "id": "community_linuxdo",
+      "name": "LINUX DO",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://linux.do/",
+      "openIn": "new-tab"
+    },
+    {
+      "id": "community_2libra",
+      "name": "2Libra",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://2libra.com/?ref=utags-shortcuts",
+      "openIn": "new-tab"
+    },
+    {
+      "id": "community_appinn",
+      "name": "小众软件",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://meta.appinn.net/",
+      "openIn": "new-tab"
+    }
+  ]
+}

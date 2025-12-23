@@ -1,0 +1,67 @@
+{
+  "id": "search_group",
+  "name": "搜索",
+  "icon": "lucide:search",
+  "match": [
+    "!https://www.google.com/search*",
+    "!https://*.bing.com/search*",
+    "!https://www.baidu.com/s?*",
+    "!https://www.duckduckgo.com/*",
+    "!https://duckduckgo.com/*",
+    "*"
+  ],
+  "defaultOpen": "new-tab",
+  "collapsed": false,
+  "itemsPerRow": 1,
+  "items": [
+    {
+      "id": "google_search",
+      "name": "Google 搜索",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://www.google.com/search?q={selected||current_title||t:utags}"
+    },
+    {
+      "id": "google_site_search",
+      "name": "Google 站内搜索",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://www.google.com/search?q=site:{hostname_without_www}%20{selected||current_title}"
+    },
+    {
+      "id": "bing_search",
+      "name": "Bing 搜索",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://www.bing.com/search?q={selected||current_title||t:utags}"
+    },
+    {
+      "id": "baidu_search",
+      "name": "Baidu 搜索",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://www.baidu.com/s?wd={selected||current_title||t:utags}"
+    },
+    {
+      "id": "baidu_site_search",
+      "name": "Baidu 站内搜索",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://www.baidu.com/s?wd=site:{hostname_without_www}%20{selected||current_title}"
+    },
+    {
+      "id": "duckduckgo_search",
+      "name": "DuckDuckGo 搜索",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://duckduckgo.com/?q={selected||current_title||t:utags}&ia=web"
+    },
+    {
+      "id": "duckduckgo_site_search",
+      "name": "DuckDuckGo 站内搜索",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://duckduckgo.com/?q=site:{hostname_without_www}%20{selected||current_title}&ia=web"
+    }
+  ]
+}

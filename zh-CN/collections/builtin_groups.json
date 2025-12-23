@@ -1,4 +1,6 @@
 {
+  "name": "内建分组",
+  "description": "包含所有脚本初始分组配置",
   "groups": [
     {
       "id": "default_group",
@@ -132,48 +134,171 @@
       ]
     },
     {
-      "id": "search_switch_group",
-      "name": "搜索切换",
-      "displayName": "搜索切换",
+      "id": "search_group_web",
+      "name": "网页",
       "icon": "lucide:search",
       "match": [
-        "https://www.google.com/search*",
-        "https://*.bing.com/search*",
+        "https://www.google.com/search?*",
+        "https://*.bing.com/search?*",
         "https://www.baidu.com/s?*",
-        "https://www.duckduckgo.com/*",
-        "https://duckduckgo.com/*"
+        "https://chat.baidu.com/search?*",
+        "https://www.so.com/s?*",
+        "https://duckduckgo.com/*",
+        "https://yandex.com/search/*",
+        "*"
       ],
       "defaultOpen": "new-tab",
       "collapsed": false,
-      "itemsPerRow": 1,
+      "itemsPerRow": 3,
       "items": [
         {
-          "id": "google_search",
-          "name": "Google 搜索",
+          "id": "google_web",
+          "name": "Google",
           "icon": "favicon",
           "type": "url",
-          "data": "https://www.google.com/search?q={selected||query||t:utags}"
+          "data": "https://www.google.com/search?q={selected||query||current_title||t:utags}&ie=utf-8&oe=utf-8"
         },
         {
-          "id": "bing_search",
-          "name": "Bing 搜索",
+          "id": "google_ai_web",
+          "name": "Google AI",
           "icon": "favicon",
           "type": "url",
-          "data": "https://www.bing.com/search?q={selected||query||t:utags}"
+          "data": "https://www.google.com/search?q={selected||query||current_title||t:utags}&ie=utf-8&oe=utf-8&udm=50"
         },
         {
-          "id": "baidu_search",
-          "name": "Baidu 搜索",
+          "id": "bing_web",
+          "name": "Bing",
           "icon": "favicon",
           "type": "url",
-          "data": "https://www.baidu.com/s?wd={selected||query||t:utags}"
+          "data": "https://www.bing.com/search?q={selected||query||current_title||t:utags}&FORM=BESBTB"
         },
         {
-          "id": "duckduckgo_search",
-          "name": "DuckDuckGo 搜索",
+          "id": "baidu_web",
+          "name": "百度",
           "icon": "favicon",
           "type": "url",
-          "data": "https://duckduckgo.com/?q={selected||query||t:utags}&ia=web"
+          "data": "https://www.baidu.com/s?wd={selected||query||current_title||t:utags}&ie=utf-8"
+        },
+        {
+          "id": "baidu_ai_web",
+          "name": "百度 AI",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://chat.baidu.com/search?word={selected||query||current_title||t:utags}&ie=utf-8&pd=csaitab&setype=csaitab"
+        },
+        {
+          "id": "360_web",
+          "name": "360",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://www.so.com/s?q={selected||query||current_title||t:utags}&ie=utf-8"
+        },
+        {
+          "id": "duckduckgo_web",
+          "name": "DuckDuckGo",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://duckduckgo.com/?q={selected||query||current_title||t:utags}"
+        },
+        {
+          "id": "yandex_web",
+          "name": "Yandex",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://yandex.com/search/?text={selected||query||current_title||t:utags}"
+        }
+      ]
+    },
+    {
+      "id": "search_group_ai",
+      "name": "AI Chat",
+      "icon": "lucide:bot",
+      "match": [
+        "https://chatgpt.com/*",
+        "https://gemini.google.com/*",
+        "https://claude.ai/*",
+        "https://www.doubao.com/chat/*",
+        "https://kimi.moonshot.cn/*",
+        "https://chat.deepseek.com/*",
+        "https://www.perplexity.ai/search/*",
+        "https://metaso.cn/*",
+        "https://felo.ai/*",
+        "https://www.genspark.ai/*",
+        "*"
+      ],
+      "defaultOpen": "new-tab",
+      "collapsed": false,
+      "itemsPerRow": 3,
+      "items": [
+        {
+          "id": "chatgpt_ai",
+          "name": "ChatGPT",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://chatgpt.com/?q={selected||query||current_title||t:utags}"
+        },
+        {
+          "id": "gemini_ai",
+          "name": "Gemini",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://gemini.google.com/app?q={selected||query||current_title||t:utags}"
+        },
+        {
+          "id": "claude_ai",
+          "name": "Claude",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://claude.ai/"
+        },
+        {
+          "id": "doubao_ai",
+          "name": "豆包",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://www.doubao.com/chat/"
+        },
+        {
+          "id": "kimi_ai",
+          "name": "Kimi",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://kimi.moonshot.cn/"
+        },
+        {
+          "id": "deepseek_ai",
+          "name": "DeepSeek",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://chat.deepseek.com/"
+        },
+        {
+          "id": "perplexity_ai",
+          "name": "Perplexity",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://www.perplexity.ai/search?q={selected||query||current_title||t:utags}"
+        },
+        {
+          "id": "metaso_ai",
+          "name": "秘塔AI",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://metaso.cn/?q={selected||query||current_title||t:utags}"
+        },
+        {
+          "id": "felo_ai",
+          "name": "Felo",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://felo.ai/search?q={selected||query||current_title||t:utags}"
+        },
+        {
+          "id": "genspark_ai",
+          "name": "Genspark",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://www.genspark.ai/search?query={selected||query||current_title||t:utags}"
         }
       ]
     },
@@ -327,7 +452,7 @@
     },
     {
       "id": "linuxdo_group",
-      "name": "L站",
+      "name": "LINUX DO",
       "icon": "url:https://wsrv.nl/?w=64&h=64&url=https%3A%2F%2Ft3.gstatic.com%2FfaviconV2%3Fclient%3DSOCIAL%26type%3DFAVICON%26fallback_opts%3DTYPE%2CSIZE%2CURL%26url%3Dhttps%3A%2F%2Flinux.do%26size%3D64",
       "match": [
         "*://linux.do/*"
@@ -447,7 +572,7 @@
       "itemsPerRow": 2
     },
     {
-      "id": "2libra_1",
+      "id": "2libra_com_invite",
       "name": "2Libra 邀请码",
       "icon": "url:https://2libra.com/favicon.ico",
       "match": [
@@ -466,7 +591,7 @@
       ]
     },
     {
-      "id": "2libra_2",
+      "id": "2libra_com_default",
       "name": "2libra",
       "icon": "url:https://2libra.com/favicon.ico",
       "match": [
@@ -533,8 +658,9 @@
       "itemsPerRow": 2
     },
     {
-      "id": "2libra_3",
-      "name": "主题",
+      "id": "2libra_com_post",
+      "name": "2libra > 主题",
+      "displayName": "主题",
       "icon": "lucide:messages-square",
       "match": [
         "!*://2libra.com/post/hot/*",

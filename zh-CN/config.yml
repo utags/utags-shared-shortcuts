@@ -1,3 +1,21 @@
+builtin_groups:
+  name: 内建分组
+  description: 包含所有脚本初始分组配置
+  groups:
+    - default
+    - read_later
+    - search_default
+    - search_group_web
+    - search_group_ai
+    - community_group
+    - site-github.com-repo
+    - site-v2ex.com
+    - site-linux.do
+    - site-2libra.com-invite
+    - site-2libra.com
+    - site-2libra.com-post
+    - other
+
 all_search_groups:
   name: 所有搜索分组
   description: 包含所有搜索引擎相关的分组
@@ -33,6 +51,9 @@ all_groups:
   name: 所有分组
   description: 包含所有已知的分组配置
   groups:
+    - default
+    - read_later
+    - search_default
     - search_group_web
     - search_group_ai
     - search_group_image
@@ -50,4 +71,5 @@ all_groups:
     - site-2libra.com
     - site-2libra.com-post
     - site-2libra.com-invite
+    - community_group
     - other

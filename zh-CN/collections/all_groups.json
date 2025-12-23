@@ -3,6 +3,137 @@
   "description": "包含所有已知的分组配置",
   "groups": [
     {
+      "id": "default_group",
+      "name": "常用",
+      "icon": "lucide:folder",
+      "match": [
+        "*"
+      ],
+      "defaultOpen": "same-tab",
+      "items": [
+        {
+          "id": "default_home",
+          "name": "首页",
+          "icon": "lucide:home",
+          "type": "url",
+          "data": "/",
+          "openIn": "same-tab"
+        },
+        {
+          "id": "default_google",
+          "name": "Google 搜索",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://www.google.com/search?q={selected||current_title||t:utags}",
+          "openIn": "new-tab"
+        },
+        {
+          "id": "default_gemini",
+          "name": "Gemini",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://gemini.google.com/app",
+          "openIn": "new-tab"
+        },
+        {
+          "id": "default_site_search",
+          "name": "站内搜索",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://www.google.com/search?q=site:{hostname_without_www}%20{selected||current_title}",
+          "openIn": "new-tab"
+        },
+        {
+          "id": "default_greasyfork_search",
+          "name": "搜索本站的油猴脚本",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://greasyfork.org/scripts/by-site/{hostname_top_level}?filter_locale=0",
+          "openIn": "new-tab"
+        }
+      ],
+      "collapsed": false,
+      "itemsPerRow": 1,
+      "hidden": false
+    },
+    {
+      "id": "read_later_group",
+      "name": "稍后阅读",
+      "icon": "lucide:clock",
+      "match": [
+        "*"
+      ],
+      "defaultOpen": "new-tab",
+      "items": []
+    },
+    {
+      "id": "search_group",
+      "name": "搜索",
+      "icon": "lucide:search",
+      "match": [
+        "!https://www.google.com/search*",
+        "!https://*.bing.com/search*",
+        "!https://www.baidu.com/s?*",
+        "!https://www.duckduckgo.com/*",
+        "!https://duckduckgo.com/*",
+        "*"
+      ],
+      "defaultOpen": "new-tab",
+      "collapsed": false,
+      "itemsPerRow": 1,
+      "items": [
+        {
+          "id": "google_search",
+          "name": "Google 搜索",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://www.google.com/search?q={selected||current_title||t:utags}"
+        },
+        {
+          "id": "google_site_search",
+          "name": "Google 站内搜索",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://www.google.com/search?q=site:{hostname_without_www}%20{selected||current_title}"
+        },
+        {
+          "id": "bing_search",
+          "name": "Bing 搜索",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://www.bing.com/search?q={selected||current_title||t:utags}"
+        },
+        {
+          "id": "baidu_search",
+          "name": "Baidu 搜索",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://www.baidu.com/s?wd={selected||current_title||t:utags}"
+        },
+        {
+          "id": "baidu_site_search",
+          "name": "Baidu 站内搜索",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://www.baidu.com/s?wd=site:{hostname_without_www}%20{selected||current_title}"
+        },
+        {
+          "id": "duckduckgo_search",
+          "name": "DuckDuckGo 搜索",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://duckduckgo.com/?q={selected||current_title||t:utags}&ia=web"
+        },
+        {
+          "id": "duckduckgo_site_search",
+          "name": "DuckDuckGo 站内搜索",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://duckduckgo.com/?q=site:{hostname_without_www}%20{selected||current_title}&ia=web"
+        }
+      ]
+    },
+    {
       "id": "search_group_web",
       "name": "网页",
       "icon": "lucide:search",
@@ -997,6 +1128,49 @@
           "type": "url",
           "data": "https://2libra.com/auth/signup/1AeoTgXc",
           "openIn": "same-tab"
+        }
+      ]
+    },
+    {
+      "id": "community_group",
+      "name": "社区",
+      "icon": "lucide:users",
+      "match": [
+        "*"
+      ],
+      "defaultOpen": "new-tab",
+      "items": [
+        {
+          "id": "community_v2ex",
+          "name": "V2EX",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://www.v2ex.com/",
+          "openIn": "new-tab"
+        },
+        {
+          "id": "community_linuxdo",
+          "name": "LINUX DO",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://linux.do/",
+          "openIn": "new-tab"
+        },
+        {
+          "id": "community_2libra",
+          "name": "2Libra",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://2libra.com/?ref=utags-shortcuts",
+          "openIn": "new-tab"
+        },
+        {
+          "id": "community_appinn",
+          "name": "小众软件",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://meta.appinn.net/",
+          "openIn": "new-tab"
         }
       ]
     },
