@@ -27,6 +27,7 @@ plugin_groups:
   groups:
     - site-2libra.com
     - site-2libra.com-post
+    - site-2libra.com-invite
 
 all_groups:
   name: 所有分组
@@ -48,3 +49,5 @@ all_groups:
     - site-linux.do
     - site-2libra.com
     - site-2libra.com-post
+    - site-2libra.com-invite
+    - other

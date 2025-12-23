@@ -1,0 +1,19 @@
+{
+  "id": "2libra_com_invite",
+  "name": "2Libra 邀请码",
+  "icon": "url:https://2libra.com/favicon.ico",
+  "match": [
+    "https://2libra.com/?ref=utags-shortcuts"
+  ],
+  "defaultOpen": "same-tab",
+  "items": [
+    {
+      "id": "1AeoTgXc",
+      "name": "注册后额外获得 1,000 金币",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://2libra.com/auth/signup/1AeoTgXc",
+      "openIn": "same-tab"
+    }
+  ]
+}
