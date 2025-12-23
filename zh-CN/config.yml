@@ -39,6 +39,13 @@ plugin_groups:
     - search_group_userscript
     - search_group_extension
 
+github_groups:
+  name: GitHub 分组
+  description: GitHub 站点相关分组
+  groups:
+    - site-github.com-repo
+    - site-github.com-utils
+
 2libra_groups:
   name: 2libra 分组
   description: 2libra 站点相关分组
@@ -66,6 +73,7 @@ all_groups:
     - search_group_userscript
     - search_group_extension
     - site-github.com-repo
+    - site-github.com-utils
     - site-v2ex.com
     - site-linux.do
     - site-2libra.com
