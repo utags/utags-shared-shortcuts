@@ -560,18 +560,33 @@
       "itemsPerRow": 1,
       "items": [
         {
-          "id": "greasy_fork",
-          "name": "Greasy Fork",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://greasyfork.org/scripts?filter_locale=0&q={selected||query||hostname_top_level}"
-        },
-        {
           "id": "greasy_fork_domain",
           "name": "Greasy Fork 域名搜索",
           "icon": "favicon",
           "type": "url",
           "data": "https://greasyfork.org/scripts/by-site/{hostname_top_level}?filter_locale=0"
+        },
+        {
+          "id": "scriptcat_domain",
+          "name": "ScriptCat 域名搜索",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://scriptcat.org/search?domain={hostname_top_level}"
+        },
+        {
+          "id": "sleazy_fork_domain",
+          "name": "Sleazy Fork 域名搜索",
+          "icon": "favicon",
+          "hidden": true,
+          "type": "url",
+          "data": "https://sleazyfork.org/scripts/by-site/{hostname_top_level}?filter_locale=0"
+        },
+        {
+          "id": "greasy_fork",
+          "name": "Greasy Fork",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://greasyfork.org/scripts?filter_locale=0&q={selected||query||hostname_top_level}"
         },
         {
           "id": "openuserjs",
@@ -586,13 +601,6 @@
           "icon": "favicon",
           "type": "url",
           "data": "https://scriptcat.org/search?keyword={selected||query||hostname_top_level}"
-        },
-        {
-          "id": "scriptcat_domain",
-          "name": "ScriptCat 域名搜索",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://scriptcat.org/search?domain={hostname_top_level}"
         },
         {
           "id": "github",
@@ -612,15 +620,9 @@
           "id": "sleazy_fork",
           "name": "Sleazy Fork",
           "icon": "favicon",
+          "hidden": true,
           "type": "url",
           "data": "https://sleazyfork.org/scripts?filter_locale=0&q={selected||query||hostname_top_level}"
-        },
-        {
-          "id": "sleazy_fork_domain",
-          "name": "Sleazy Fork 域名搜索",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://sleazyfork.org/scripts/by-site/{hostname_top_level}?filter_locale=0"
         }
       ]
     },
