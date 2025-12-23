@@ -42,3 +42,14 @@
 ![screenshot](https://wsrv.nl/?url=https://raw.githubusercontent.com/utags/userscripts/main/assets/screenshot-2025-12-22-16-56-11.png)
 ![screenshot](https://wsrv.nl/?url=https://raw.githubusercontent.com/utags/userscripts/main/assets/screenshot-2025-12-22-16-52-20.png)
 ![screenshot](https://raw.githubusercontent.com/utags/userscripts/main/assets/screenshot-2025-12-22-17-03-52.gif)
+
+## 贡献指南
+
+1.  **修改或添加 JSON 文件**：
+    - 直接修改 `zh-CN/` 目录下的 `.json` 文件。
+    - 如果需要，在 `zh-CN/` 目录下添加新的 `.json` 文件。
+2.  **无需手动更新聚合文件**：
+    - GitHub Actions 会自动根据 `config.yml` 配置，聚合生成 `collections/` 下的文件。
+    - README 中的表格也会自动更新。
+3.  **提交变更**：
+    - 提交修改后的 `.json` 文件即可。
