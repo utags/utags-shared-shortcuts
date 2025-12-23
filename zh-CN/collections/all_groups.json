@@ -980,6 +980,58 @@
           "openIn": "same-tab"
         }
       ]
+    },
+    {
+      "id": "2libra_com_invite",
+      "name": "2Libra 邀请码",
+      "icon": "url:https://2libra.com/favicon.ico",
+      "match": [
+        "https://2libra.com/?ref=utags-shortcuts"
+      ],
+      "defaultOpen": "same-tab",
+      "items": [
+        {
+          "id": "1AeoTgXc",
+          "name": "注册后额外获得 1,000 金币",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://2libra.com/auth/signup/1AeoTgXc",
+          "openIn": "same-tab"
+        }
+      ]
+    },
+    {
+      "id": "other",
+      "name": "其他",
+      "icon": "lucide:hand-heart",
+      "match": [
+        "*"
+      ],
+      "defaultOpen": "new-tab",
+      "collapsed": true,
+      "items": [
+        {
+          "id": "issues",
+          "name": "问题反馈",
+          "type": "url",
+          "data": "https://github.com/utags/userscripts/issues",
+          "icon": "lucide:bug"
+        },
+        {
+          "id": "project",
+          "name": "项目地址",
+          "type": "url",
+          "data": "https://github.com/utags/userscripts",
+          "icon": "lucide:github"
+        },
+        {
+          "id": "more-scripts",
+          "name": "更多脚本",
+          "type": "url",
+          "data": "https://greasyfork.org/users/1030884-pipecraft?sort=total_installs",
+          "icon": "lucide:package"
+        }
+      ]
     }
   ]
 }
