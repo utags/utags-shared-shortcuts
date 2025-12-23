@@ -1,0 +1,76 @@
+{
+  "name": "GitHub 分组",
+  "description": "GitHub 站点相关分组",
+  "groups": [
+    {
+      "id": "github_repo",
+      "name": "GitHub Repo",
+      "icon": "url:https://github.com/favicon.ico",
+      "match": [
+        "!/https://github\\.com/(topics|collections|trending|resources)/.*/",
+        "/https://github\\.com/[\\w-]+/[\\w-]+(/.*)?$/"
+      ],
+      "defaultOpen": "same-tab",
+      "items": [
+        {
+          "id": "nkv2f0hp",
+          "name": "Home",
+          "type": "url",
+          "data": "https://github.com/{p:1||t:utags}/{p:2||t:utags}",
+          "openIn": "same-tab",
+          "icon": "lucide:home"
+        },
+        {
+          "id": "mw2j0leg",
+          "name": "Issues",
+          "type": "url",
+          "data": "https://github.com/{p:1||t:utags}/{p:2||t:utags}/issues",
+          "openIn": "same-tab"
+        },
+        {
+          "id": "tuonitkh",
+          "name": "Pull requests",
+          "type": "url",
+          "data": "https://github.com/{p:1||t:utags}/{p:2||t:utags}/pulls",
+          "openIn": "same-tab"
+        }
+      ]
+    },
+    {
+      "id": "github_utils",
+      "name": "GitHub Utils",
+      "icon": "url:https://github.com/favicon.ico",
+      "match": [
+        "!/https://github\\.com/(topics|collections|trending|resources)/.*/",
+        "/https://github\\.com/[\\w-]+/[\\w-]+(/.*)?$/"
+      ],
+      "defaultOpen": "new-tab",
+      "items": [
+        {
+          "id": "githubdev",
+          "name": "GitHub.dev",
+          "type": "url",
+          "data": "https://github.dev/{p:1||t:utags}/{p:2||t:utags}",
+          "openIn": "new-tab",
+          "icon": "lucide:code-xml"
+        },
+        {
+          "id": "deepwiki",
+          "name": "DeepWiki",
+          "type": "url",
+          "data": "https://deepwiki.com/{p:1||t:utags}/{p:2||t:utags}",
+          "openIn": "new-tab",
+          "icon": "lucide:book-open-text"
+        },
+        {
+          "id": "zreadai",
+          "name": "Zread.ai",
+          "type": "url",
+          "data": "https://zread.ai/{p:1||t:utags}/{p:2||t:utags}",
+          "openIn": "new-tab",
+          "icon": "lucide:book-open-text"
+        }
+      ]
+    }
+  ]
+}
