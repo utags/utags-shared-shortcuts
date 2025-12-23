@@ -3,6 +3,9 @@
   "name": "知识",
   "icon": "lucide:book-open",
   "match": [
+    "https://zh.wikipedia.org/wiki/*",
+    "https://www.zhihu.com/search?*",
+    "https://baike.baidu.com/search?*",
     "*"
   ],
   "defaultOpen": "new-tab",

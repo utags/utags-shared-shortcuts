@@ -3,6 +3,10 @@
   "name": "购物",
   "icon": "lucide:shopping-cart",
   "match": [
+    "https://*.taobao.com/*",
+    "https://*.jd.com/*",
+    "https://*.amazon.cn/*",
+    "https://*.smzdm.com/*",
     "*"
   ],
   "defaultOpen": "new-tab",

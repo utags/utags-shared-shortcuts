@@ -3,6 +3,12 @@
   "name": "视频",
   "icon": "lucide:video",
   "match": [
+    "https://www.youtube.com/*",
+    "https://*.bilibili.com/*",
+    "https://*.youku.com/*",
+    "https://*.iqiyi.com/*",
+    "https://v.qq.com/*",
+    "https://*.douyin.com/*",
     "*"
   ],
   "defaultOpen": "new-tab",

@@ -3,6 +3,16 @@
   "name": "AI Chat",
   "icon": "lucide:bot",
   "match": [
+    "https://chatgpt.com/*",
+    "https://gemini.google.com/*",
+    "https://claude.ai/*",
+    "https://www.doubao.com/chat/*",
+    "https://kimi.moonshot.cn/*",
+    "https://chat.deepseek.com/*",
+    "https://www.perplexity.ai/search/*",
+    "https://metaso.cn/*",
+    "https://felo.ai/*",
+    "https://www.genspark.ai/*",
     "*"
   ],
   "defaultOpen": "new-tab",
@@ -77,7 +87,7 @@
       "name": "Genspark",
       "icon": "favicon",
       "type": "url",
-      "data": "https://genspark.ai/search?query={selected||query||current_title||t:utags}"
+      "data": "https://www.genspark.ai/search?query={selected||query||current_title||t:utags}"
     }
   ]
 }

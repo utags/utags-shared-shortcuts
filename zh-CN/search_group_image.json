@@ -3,6 +3,15 @@
   "name": "图片",
   "icon": "lucide:image",
   "match": [
+    "https://www.google.com/search?*",
+    "https://image.baidu.com/*",
+    "https://*.bing.com/images/search?*",
+    "https://image.so.com/*",
+    "https://duckduckgo.com/*",
+    "https://yandex.com/images/search?*",
+    "https://yandex.com/search/*",
+    "https://www.pixiv.net/*",
+    "https://huaban.com/*",
     "*"
   ],
   "defaultOpen": "new-tab",

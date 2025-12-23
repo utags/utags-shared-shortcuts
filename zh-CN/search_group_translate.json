@@ -3,6 +3,11 @@
   "name": "翻译",
   "icon": "lucide:languages",
   "match": [
+    "https://translate.google.com/*",
+    "https://fanyi.baidu.com/*",
+    "https://www.deepl.com/*",
+    "https://*.youdao.com/*",
+    "https://*.bing.com/dict/*",
     "*"
   ],
   "defaultOpen": "new-tab",

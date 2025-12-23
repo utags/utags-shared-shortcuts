@@ -3,6 +3,10 @@
   "name": "学术",
   "icon": "lucide:graduation-cap",
   "match": [
+    "https://scholar.google.com/*",
+    "https://xueshu.baidu.com/*",
+    "https://kns.cnki.net/*",
+    "https://s.wanfangdata.com.cn/*",
     "*"
   ],
   "defaultOpen": "new-tab",
