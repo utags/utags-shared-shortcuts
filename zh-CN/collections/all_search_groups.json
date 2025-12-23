@@ -5,6 +5,13 @@
       "name": "网页",
       "icon": "lucide:search",
       "match": [
+        "https://www.google.com/search?*",
+        "https://*.bing.com/search?*",
+        "https://www.baidu.com/s?*",
+        "https://chat.baidu.com/search?*",
+        "https://www.so.com/s?*",
+        "https://duckduckgo.com/*",
+        "https://yandex.com/search/*",
         "*"
       ],
       "defaultOpen": "new-tab",
@@ -70,346 +77,20 @@
       ]
     },
     {
-      "id": "search_group_image",
-      "name": "图片",
-      "icon": "lucide:image",
-      "match": [
-        "*"
-      ],
-      "defaultOpen": "new-tab",
-      "collapsed": false,
-      "itemsPerRow": 3,
-      "items": [
-        {
-          "id": "google_image",
-          "name": "Google",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://www.google.com/search?q={selected||query||current_title||t:utags}&udm=2"
-        },
-        {
-          "id": "baidu_image",
-          "name": "百度",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://image.baidu.com/search/index?tn=baiduimage&word={selected||query||current_title||t:utags}"
-        },
-        {
-          "id": "bing_image",
-          "name": "Bing",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://www.bing.com/images/search?q={selected||query||current_title||t:utags}"
-        },
-        {
-          "id": "360_image",
-          "name": "360",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://image.so.com/i?q={selected||query||current_title||t:utags}"
-        },
-        {
-          "id": "duckduckgo_image",
-          "name": "DuckDuckGo",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://duckduckgo.com/?q={selected||query||current_title||t:utags}&ia=images&iax=images"
-        },
-        {
-          "id": "yandex_image",
-          "name": "Yandex",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://yandex.com/images/search?from=tabbar&text={selected||query||current_title||t:utags}"
-        },
-        {
-          "id": "pixiv_image",
-          "name": "Pixiv",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://www.pixiv.net/search.php?s_mode=s_tag&word={selected||query||current_title||t:utags}"
-        },
-        {
-          "id": "huaban_image",
-          "name": "花瓣",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://huaban.com/search/?q={selected||query||current_title||t:utags}"
-        }
-      ]
-    },
-    {
-      "id": "search_group_translate",
-      "name": "翻译",
-      "icon": "lucide:languages",
-      "match": [
-        "*"
-      ],
-      "defaultOpen": "new-tab",
-      "collapsed": false,
-      "itemsPerRow": 3,
-      "items": [
-        {
-          "id": "google_translate",
-          "name": "Google",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://translate.google.com/?sl=auto&tl=zh-CN&text={selected||query||current_title||t:utags}&op=translate"
-        },
-        {
-          "id": "baidu_translate",
-          "name": "百度",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://fanyi.baidu.com/#auto/zh/{selected||query||current_title||t:utags}"
-        },
-        {
-          "id": "deepl_translate",
-          "name": "DeepL",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://www.deepl.com/translator?share=generic#en/zh-hans/{selected||query||current_title||t:utags}"
-        },
-        {
-          "id": "youdao_translate",
-          "name": "有道",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://dict.youdao.com/result?word={selected||query||current_title||t:utags}&lang=en"
-        },
-        {
-          "id": "bing_translate",
-          "name": "Bing",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://www.bing.com/dict/search?q={selected||query||current_title||t:utags}&FORM=HDRSC6"
-        }
-      ]
-    },
-    {
-      "id": "search_group_knowledge",
-      "name": "知识",
-      "icon": "lucide:book-open",
-      "match": [
-        "*"
-      ],
-      "defaultOpen": "new-tab",
-      "collapsed": false,
-      "itemsPerRow": 3,
-      "items": [
-        {
-          "id": "wikipedia_knowledge",
-          "name": "维基百科",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://zh.wikipedia.org/wiki/{selected||query||current_title||t:utags}"
-        },
-        {
-          "id": "zhihu_knowledge",
-          "name": "知乎",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://www.zhihu.com/search?q={selected||query||current_title||t:utags}&type=content"
-        },
-        {
-          "id": "baidu_baike",
-          "name": "百度百科",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://baike.baidu.com/search?word={selected||query||current_title||t:utags}&rn=10&enc=utf8&onlySite=1&fromModule=lemma_search-box"
-        }
-      ]
-    },
-    {
-      "id": "search_group_video",
-      "name": "视频",
-      "icon": "lucide:video",
-      "match": [
-        "*"
-      ],
-      "defaultOpen": "new-tab",
-      "collapsed": false,
-      "itemsPerRow": 3,
-      "items": [
-        {
-          "id": "youtube_video",
-          "name": "YouTube",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://www.youtube.com/results?search_query={selected||query||current_title||t:utags}"
-        },
-        {
-          "id": "bilibili_video",
-          "name": "Bilibili",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://search.bilibili.com/all?keyword={selected||query||current_title||t:utags}"
-        },
-        {
-          "id": "youku_video",
-          "name": "优酷",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://so.youku.com/search_video/q_{selected||query||current_title||t:utags}"
-        },
-        {
-          "id": "iqiyi_video",
-          "name": "爱奇艺",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://www.iqiyi.com/search/{selected||query||current_title||t:utags}.html"
-        },
-        {
-          "id": "tencent_video",
-          "name": "腾讯视频",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://v.qq.com/x/search/?q={selected||query||current_title||t:utags}&queryFrom=0"
-        },
-        {
-          "id": "douyin_video",
-          "name": "抖音",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://www.douyin.com/search/{selected||query||current_title||t:utags}?type=general"
-        }
-      ]
-    },
-    {
-      "id": "search_group_sociality",
-      "name": "社交",
-      "icon": "lucide:users",
-      "match": [
-        "*"
-      ],
-      "defaultOpen": "new-tab",
-      "collapsed": false,
-      "itemsPerRow": 3,
-      "items": [
-        {
-          "id": "weibo_social",
-          "name": "微博",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://s.weibo.com/weibo/{selected||query||current_title||t:utags}"
-        },
-        {
-          "id": "tieba_social",
-          "name": "贴吧",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://tieba.baidu.com/f/search/res?ie=utf-8&qw={selected||query||current_title||t:utags}"
-        },
-        {
-          "id": "instagram_social",
-          "name": "Instagram",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://www.instagram.com/explore/tags/{selected||query||current_title||t:utags}/"
-        },
-        {
-          "id": "x_social",
-          "name": "X",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://x.com/search?q={selected||query||current_title||t:utags}"
-        },
-        {
-          "id": "facebook_social",
-          "name": "Facebook",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://www.facebook.com/search/top/?q={selected||query||current_title||t:utags}"
-        }
-      ]
-    },
-    {
-      "id": "search_group_shopping",
-      "name": "购物",
-      "icon": "lucide:shopping-cart",
-      "match": [
-        "*"
-      ],
-      "defaultOpen": "new-tab",
-      "collapsed": false,
-      "itemsPerRow": 3,
-      "items": [
-        {
-          "id": "taobao_shopping",
-          "name": "淘宝",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://s.taobao.com/search?q={selected||query||current_title||t:utags}"
-        },
-        {
-          "id": "jd_shopping",
-          "name": "京东",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://search.jd.com/Search?keyword={selected||query||current_title||t:utags}"
-        },
-        {
-          "id": "amazon_shopping",
-          "name": "亚马逊",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://www.amazon.cn/s?k={selected||query||current_title||t:utags}"
-        },
-        {
-          "id": "smzdm_shopping",
-          "name": "什么值得买",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://search.smzdm.com/?c=home&s={selected||query||current_title||t:utags}"
-        }
-      ]
-    },
-    {
-      "id": "search_group_scholar",
-      "name": "学术",
-      "icon": "lucide:graduation-cap",
-      "match": [
-        "*"
-      ],
-      "defaultOpen": "new-tab",
-      "collapsed": false,
-      "itemsPerRow": 3,
-      "items": [
-        {
-          "id": "google_scholar",
-          "name": "谷歌学术",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://scholar.google.com/scholar?hl=zh-CN&q={selected||query||current_title||t:utags}"
-        },
-        {
-          "id": "baidu_scholar",
-          "name": "百度学术",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://xueshu.baidu.com/ndscholar/browse/search?wd={selected||query||current_title||t:utags}"
-        },
-        {
-          "id": "cnki_scholar",
-          "name": "知网",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://kns.cnki.net/kns8s/defaultresult/index?kw={selected||query||current_title||t:utags}"
-        },
-        {
-          "id": "wanfang_scholar",
-          "name": "万方",
-          "icon": "favicon",
-          "type": "url",
-          "data": "https://s.wanfangdata.com.cn/paper?q={selected||query||current_title||t:utags}"
-        }
-      ]
-    },
-    {
       "id": "search_group_ai",
       "name": "AI Chat",
       "icon": "lucide:bot",
       "match": [
+        "https://chatgpt.com/*",
+        "https://gemini.google.com/*",
+        "https://claude.ai/*",
+        "https://www.doubao.com/chat/*",
+        "https://kimi.moonshot.cn/*",
+        "https://chat.deepseek.com/*",
+        "https://www.perplexity.ai/search/*",
+        "https://metaso.cn/*",
+        "https://felo.ai/*",
+        "https://www.genspark.ai/*",
         "*"
       ],
       "defaultOpen": "new-tab",
@@ -484,7 +165,499 @@
           "name": "Genspark",
           "icon": "favicon",
           "type": "url",
-          "data": "https://genspark.ai/search?query={selected||query||current_title||t:utags}"
+          "data": "https://www.genspark.ai/search?query={selected||query||current_title||t:utags}"
+        }
+      ]
+    },
+    {
+      "id": "search_group_image",
+      "name": "图片",
+      "icon": "lucide:image",
+      "match": [
+        "https://www.google.com/search?*",
+        "https://image.baidu.com/*",
+        "https://*.bing.com/images/search?*",
+        "https://image.so.com/*",
+        "https://duckduckgo.com/*",
+        "https://yandex.com/images/search?*",
+        "https://yandex.com/search/*",
+        "https://www.pixiv.net/*",
+        "https://huaban.com/*",
+        "*"
+      ],
+      "defaultOpen": "new-tab",
+      "collapsed": false,
+      "itemsPerRow": 3,
+      "items": [
+        {
+          "id": "google_image",
+          "name": "Google",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://www.google.com/search?q={selected||query||current_title||t:utags}&udm=2"
+        },
+        {
+          "id": "baidu_image",
+          "name": "百度",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://image.baidu.com/search/index?tn=baiduimage&word={selected||query||current_title||t:utags}"
+        },
+        {
+          "id": "bing_image",
+          "name": "Bing",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://www.bing.com/images/search?q={selected||query||current_title||t:utags}"
+        },
+        {
+          "id": "360_image",
+          "name": "360",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://image.so.com/i?q={selected||query||current_title||t:utags}"
+        },
+        {
+          "id": "duckduckgo_image",
+          "name": "DuckDuckGo",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://duckduckgo.com/?q={selected||query||current_title||t:utags}&ia=images&iax=images"
+        },
+        {
+          "id": "yandex_image",
+          "name": "Yandex",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://yandex.com/images/search?from=tabbar&text={selected||query||current_title||t:utags}"
+        },
+        {
+          "id": "pixiv_image",
+          "name": "Pixiv",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://www.pixiv.net/search.php?s_mode=s_tag&word={selected||query||current_title||t:utags}"
+        },
+        {
+          "id": "huaban_image",
+          "name": "花瓣",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://huaban.com/search/?q={selected||query||current_title||t:utags}"
+        }
+      ]
+    },
+    {
+      "id": "search_group_translate",
+      "name": "翻译",
+      "icon": "lucide:languages",
+      "match": [
+        "https://translate.google.com/*",
+        "https://fanyi.baidu.com/*",
+        "https://www.deepl.com/*",
+        "https://*.youdao.com/*",
+        "https://*.bing.com/dict/*",
+        "*"
+      ],
+      "defaultOpen": "new-tab",
+      "collapsed": false,
+      "itemsPerRow": 3,
+      "items": [
+        {
+          "id": "google_translate",
+          "name": "Google",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://translate.google.com/?sl=auto&tl=zh-CN&text={selected||query||current_title||t:utags}&op=translate"
+        },
+        {
+          "id": "baidu_translate",
+          "name": "百度",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://fanyi.baidu.com/#auto/zh/{selected||query||current_title||t:utags}"
+        },
+        {
+          "id": "deepl_translate",
+          "name": "DeepL",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://www.deepl.com/translator?share=generic#en/zh-hans/{selected||query||current_title||t:utags}"
+        },
+        {
+          "id": "youdao_translate",
+          "name": "有道",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://dict.youdao.com/result?word={selected||query||current_title||t:utags}&lang=en"
+        },
+        {
+          "id": "bing_translate",
+          "name": "Bing",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://www.bing.com/dict/search?q={selected||query||current_title||t:utags}&FORM=HDRSC6"
+        }
+      ]
+    },
+    {
+      "id": "search_group_sociality",
+      "name": "社交",
+      "icon": "lucide:users",
+      "match": [
+        "https://*.weibo.com/*",
+        "https://tieba.baidu.com/*",
+        "https://*.instagram.com/*",
+        "https://x.com/*",
+        "https://*.x.com/*",
+        "https://*.facebook.com/*",
+        "*"
+      ],
+      "defaultOpen": "new-tab",
+      "collapsed": false,
+      "itemsPerRow": 3,
+      "items": [
+        {
+          "id": "weibo_social",
+          "name": "微博",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://s.weibo.com/weibo/{selected||query||current_title||t:utags}"
+        },
+        {
+          "id": "tieba_social",
+          "name": "贴吧",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://tieba.baidu.com/f/search/res?ie=utf-8&qw={selected||query||current_title||t:utags}"
+        },
+        {
+          "id": "instagram_social",
+          "name": "Instagram",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://www.instagram.com/explore/tags/{selected||query||current_title||t:utags}/"
+        },
+        {
+          "id": "x_social",
+          "name": "X",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://x.com/search?q={selected||query||current_title||t:utags}"
+        },
+        {
+          "id": "facebook_social",
+          "name": "Facebook",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://www.facebook.com/search/top/?q={selected||query||current_title||t:utags}"
+        }
+      ]
+    },
+    {
+      "id": "search_group_knowledge",
+      "name": "知识",
+      "icon": "lucide:book-open",
+      "match": [
+        "https://zh.wikipedia.org/wiki/*",
+        "https://www.zhihu.com/search?*",
+        "https://baike.baidu.com/search?*",
+        "*"
+      ],
+      "defaultOpen": "new-tab",
+      "collapsed": false,
+      "itemsPerRow": 3,
+      "items": [
+        {
+          "id": "wikipedia_knowledge",
+          "name": "维基百科",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://zh.wikipedia.org/wiki/{selected||query||current_title||t:utags}"
+        },
+        {
+          "id": "zhihu_knowledge",
+          "name": "知乎",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://www.zhihu.com/search?q={selected||query||current_title||t:utags}&type=content"
+        },
+        {
+          "id": "baidu_baike",
+          "name": "百度百科",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://baike.baidu.com/search?word={selected||query||current_title||t:utags}&rn=10&enc=utf8&onlySite=1&fromModule=lemma_search-box"
+        }
+      ]
+    },
+    {
+      "id": "search_group_video",
+      "name": "视频",
+      "icon": "lucide:video",
+      "match": [
+        "https://www.youtube.com/*",
+        "https://*.bilibili.com/*",
+        "https://*.youku.com/*",
+        "https://*.iqiyi.com/*",
+        "https://v.qq.com/*",
+        "https://*.douyin.com/*",
+        "*"
+      ],
+      "defaultOpen": "new-tab",
+      "collapsed": false,
+      "itemsPerRow": 3,
+      "items": [
+        {
+          "id": "youtube_video",
+          "name": "YouTube",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://www.youtube.com/results?search_query={selected||query||current_title||t:utags}"
+        },
+        {
+          "id": "bilibili_video",
+          "name": "Bilibili",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://search.bilibili.com/all?keyword={selected||query||current_title||t:utags}"
+        },
+        {
+          "id": "youku_video",
+          "name": "优酷",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://so.youku.com/search_video/q_{selected||query||current_title||t:utags}"
+        },
+        {
+          "id": "iqiyi_video",
+          "name": "爱奇艺",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://www.iqiyi.com/search/{selected||query||current_title||t:utags}.html"
+        },
+        {
+          "id": "tencent_video",
+          "name": "腾讯视频",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://v.qq.com/x/search/?q={selected||query||current_title||t:utags}&queryFrom=0"
+        },
+        {
+          "id": "douyin_video",
+          "name": "抖音",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://www.douyin.com/search/{selected||query||current_title||t:utags}?type=general"
+        }
+      ]
+    },
+    {
+      "id": "search_group_shopping",
+      "name": "购物",
+      "icon": "lucide:shopping-cart",
+      "match": [
+        "https://*.taobao.com/*",
+        "https://*.jd.com/*",
+        "https://*.amazon.cn/*",
+        "https://*.smzdm.com/*",
+        "*"
+      ],
+      "defaultOpen": "new-tab",
+      "collapsed": false,
+      "itemsPerRow": 3,
+      "items": [
+        {
+          "id": "taobao_shopping",
+          "name": "淘宝",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://s.taobao.com/search?q={selected||query||current_title||t:utags}"
+        },
+        {
+          "id": "jd_shopping",
+          "name": "京东",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://search.jd.com/Search?keyword={selected||query||current_title||t:utags}"
+        },
+        {
+          "id": "amazon_shopping",
+          "name": "亚马逊",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://www.amazon.cn/s?k={selected||query||current_title||t:utags}"
+        },
+        {
+          "id": "smzdm_shopping",
+          "name": "什么值得买",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://search.smzdm.com/?c=home&s={selected||query||current_title||t:utags}"
+        }
+      ]
+    },
+    {
+      "id": "search_group_scholar",
+      "name": "学术",
+      "icon": "lucide:graduation-cap",
+      "match": [
+        "https://scholar.google.com/*",
+        "https://xueshu.baidu.com/*",
+        "https://kns.cnki.net/*",
+        "https://s.wanfangdata.com.cn/*",
+        "*"
+      ],
+      "defaultOpen": "new-tab",
+      "collapsed": false,
+      "itemsPerRow": 3,
+      "items": [
+        {
+          "id": "google_scholar",
+          "name": "谷歌学术",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://scholar.google.com/scholar?hl=zh-CN&q={selected||query||current_title||t:utags}"
+        },
+        {
+          "id": "baidu_scholar",
+          "name": "百度学术",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://xueshu.baidu.com/ndscholar/browse/search?wd={selected||query||current_title||t:utags}"
+        },
+        {
+          "id": "cnki_scholar",
+          "name": "知网",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://kns.cnki.net/kns8s/defaultresult/index?kw={selected||query||current_title||t:utags}"
+        },
+        {
+          "id": "wanfang_scholar",
+          "name": "万方",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://s.wanfangdata.com.cn/paper?q={selected||query||current_title||t:utags}"
+        }
+      ]
+    },
+    {
+      "id": "search_group_userscript",
+      "name": "用户脚本",
+      "icon": "lucide:puzzle",
+      "match": [
+        "https://greasyfork.org/*",
+        "https://openuserjs.org/*",
+        "https://scriptcat.org/*",
+        "https://github.com/search?type=code&q=language%3AJavaScript+%22%3D%3DUserScript%3D%3D%22+*",
+        "https://gist.github.com/search?l=JavaScript&q=%22%3D%3DUserScript%3D%3D%22+*",
+        "https://sleazyfork.org/*",
+        "*"
+      ],
+      "defaultOpen": "new-tab",
+      "collapsed": false,
+      "itemsPerRow": 1,
+      "items": [
+        {
+          "id": "greasy_fork",
+          "name": "Greasy Fork",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://greasyfork.org/scripts?filter_locale=0&q={selected||query||hostname_top_level}"
+        },
+        {
+          "id": "greasy_fork_domain",
+          "name": "Greasy Fork 域名搜索",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://greasyfork.org/scripts/by-site/{hostname_top_level}?filter_locale=0"
+        },
+        {
+          "id": "openuserjs",
+          "name": "OpenUserJS",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://openuserjs.org/?q={selected||query||hostname_top_level}"
+        },
+        {
+          "id": "scriptcat",
+          "name": "ScriptCat",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://scriptcat.org/search?keyword={selected||query||hostname_top_level}"
+        },
+        {
+          "id": "scriptcat_domain",
+          "name": "ScriptCat 域名搜索",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://scriptcat.org/search?domain={hostname_top_level}"
+        },
+        {
+          "id": "github",
+          "name": "GitHub",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://github.com/search?type=code&q=language%3AJavaScript+%22%3D%3DUserScript%3D%3D%22+{selected||query||hostname_top_level}"
+        },
+        {
+          "id": "github_gist",
+          "name": "GitHub Gist",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://gist.github.com/search?l=JavaScript&q=%22%3D%3DUserScript%3D%3D%22+{selected||query||hostname_top_level}"
+        },
+        {
+          "id": "sleazy_fork",
+          "name": "Sleazy Fork",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://sleazyfork.org/scripts?filter_locale=0&q={selected||query||hostname_top_level}"
+        },
+        {
+          "id": "sleazy_fork_domain",
+          "name": "Sleazy Fork 域名搜索",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://sleazyfork.org/scripts/by-site/{hostname_top_level}?filter_locale=0"
+        }
+      ]
+    },
+    {
+      "id": "search_group_extension",
+      "name": "浏览器扩展",
+      "icon": "lucide:puzzle",
+      "match": [
+        "https://chromewebstore.google.com/search/*",
+        "https://microsoftedge.microsoft.com/addons/search/*",
+        "https://addons.mozilla.org/zh-CN/firefox/search/*",
+        "*"
+      ],
+      "defaultOpen": "new-tab",
+      "collapsed": false,
+      "itemsPerRow": 3,
+      "items": [
+        {
+          "id": "chrome_extension",
+          "name": "Chrome 扩展",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://chromewebstore.google.com/search/{selected||query||t:utags}"
+        },
+        {
+          "id": "edge_extension",
+          "name": "Edge 扩展",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://microsoftedge.microsoft.com/addons/search/{selected||query||t:utags}"
+        },
+        {
+          "id": "firefox_extension",
+          "name": "Firefox 扩展",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://addons.mozilla.org/zh-CN/firefox/search/?q={selected||query||t:utags}"
         }
       ]
     }
