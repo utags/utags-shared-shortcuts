@@ -18,3 +18,21 @@ plugin_groups:
 2libra_groups:
   - site-2libra.com
   - site-2libra.com-post
+
+all_groups:
+  - search_group_web
+  - search_group_ai
+  - search_group_image
+  - search_group_translate
+  - search_group_sociality
+  - search_group_knowledge
+  - search_group_video
+  - search_group_shopping
+  - search_group_scholar
+  - search_group_userscript
+  - search_group_extension
+  - site-github.com-repo
+  - site-v2ex.com
+  - site-linux.do
+  - site-2libra.com
+  - site-2libra.com-post

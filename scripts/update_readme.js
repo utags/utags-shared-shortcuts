@@ -130,11 +130,13 @@ try {
         collectionRows.push({
           filename: `${collectionName}.json`,
           name:
-            collectionName === 'all_search_groups'
+            collectionName === 'all_groups'
               ? '所有分组'
-              : collectionName === 'plugin_groups'
-                ? '插件分组'
-                : collectionName,
+              : 'all_search_groups'
+                ? '所有搜索分组'
+                : collectionName === 'plugin_groups'
+                  ? '插件分组'
+                  : collectionName,
           count: getCollectionShortcutsCount(data),
           groupCount: includedGroups.length,
           date: getFileDate(collectionFile),
