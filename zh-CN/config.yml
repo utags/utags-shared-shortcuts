@@ -14,3 +14,7 @@ all_search_groups:
 plugin_groups:
   - search_group_userscript
   - search_group_extension
+
+2libra_groups:
+  - site-2libra.com
+  - site-2libra.com-post

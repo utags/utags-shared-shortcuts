@@ -1,0 +1,121 @@
+{
+  "id": "linuxdo_group",
+  "name": "LINUX DO",
+  "icon": "url:https://wsrv.nl/?w=64&h=64&url=https%3A%2F%2Ft3.gstatic.com%2FfaviconV2%3Fclient%3DSOCIAL%26type%3DFAVICON%26fallback_opts%3DTYPE%2CSIZE%2CURL%26url%3Dhttps%3A%2F%2Flinux.do%26size%3D64",
+  "match": [
+    "*://linux.do/*"
+  ],
+  "defaultOpen": "same-tab",
+  "items": [
+    {
+      "id": "fq7s1vg6",
+      "name": "最新话题",
+      "type": "url",
+      "data": "https://linux.do/latest",
+      "openIn": "same-tab"
+    },
+    {
+      "id": "empa8f6o",
+      "name": "创建日期排序",
+      "type": "url",
+      "data": "?ascending=false&order=created",
+      "openIn": "same-tab",
+      "icon": "lucide:calendar-arrow-down"
+    },
+    {
+      "id": "ghjguteh",
+      "name": "未读（Unread）",
+      "type": "url",
+      "data": "https://linux.do/unread",
+      "openIn": "same-tab",
+      "icon": "lucide:book-plus"
+    },
+    {
+      "id": "fiahbsfb",
+      "name": "始皇",
+      "type": "url",
+      "data": "https://linux.do/u/neo/activity",
+      "openIn": "same-tab",
+      "icon": "lucide:crown"
+    },
+    {
+      "id": "v7xfwc1x",
+      "name": "快问快答",
+      "type": "url",
+      "data": "https://linux.do/tag/%E5%BF%AB%E9%97%AE%E5%BF%AB%E7%AD%94",
+      "openIn": "same-tab",
+      "icon": "lucide:circle-question-mark"
+    },
+    {
+      "id": "03v787o2",
+      "name": "精华神帖",
+      "type": "url",
+      "data": "https://linux.do/tag/%E7%B2%BE%E5%8D%8E%E7%A5%9E%E5%B8%96",
+      "openIn": "same-tab",
+      "icon": "lucide:thumbs-up"
+    },
+    {
+      "id": "linuxdo_search",
+      "name": "搜索",
+      "icon": "lucide:search",
+      "type": "url",
+      "data": "https://linux.do/search?q={selected||current_title||t:默认值}%20order%3Alatest",
+      "openIn": "new-tab"
+    },
+    {
+      "id": "linuxdo_google_search",
+      "name": "Google 搜索",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://www.google.com/search?q=site:linux.do%20{selected||current_title}",
+      "openIn": "new-tab"
+    },
+    {
+      "id": "0eybi3bv",
+      "name": "leaderbooard",
+      "type": "url",
+      "data": "https://linux.do/leaderboard",
+      "openIn": "new-tab",
+      "icon": "lucide:trophy"
+    },
+    {
+      "id": "oy4c2de9",
+      "name": "Connect",
+      "type": "url",
+      "data": "https://connect.linux.do/",
+      "openIn": "new-tab"
+    },
+    {
+      "id": "tt9yac9m",
+      "name": "IDC Flare",
+      "type": "url",
+      "data": "https://idcflare.com/",
+      "openIn": "new-tab"
+    },
+    {
+      "id": "vt4y2688",
+      "name": "Challenge",
+      "type": "url",
+      "data": "https://linux.do/challenge?redirect={current_url_encoded}",
+      "openIn": "same-tab",
+      "icon": "lucide:swords"
+    },
+    {
+      "id": "20p30jnz",
+      "name": "分发站",
+      "type": "url",
+      "data": "https://cdk.linux.do/",
+      "openIn": "new-tab",
+      "icon": "lucide:ticket-check"
+    },
+    {
+      "id": "q1df8ev8",
+      "name": "社区子系统和元宇宙",
+      "type": "url",
+      "data": "https://linux.do/pub/resources",
+      "openIn": "new-tab",
+      "icon": "lucide:infinity"
+    }
+  ],
+  "itemsPerRow": 2
+}

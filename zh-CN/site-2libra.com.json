@@ -1,0 +1,67 @@
+{
+  "id": "2libra_com_default",
+  "name": "2libra",
+  "icon": "url:https://2libra.com/favicon.ico",
+  "match": [
+    "*://2libra.com/*"
+  ],
+  "defaultOpen": "same-tab",
+  "items": [
+    {
+      "id": "zijgxywv",
+      "name": "首页",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://2libra.com/",
+      "openIn": "same-tab"
+    },
+    {
+      "id": "aupy1kcr",
+      "name": "新发表",
+      "type": "url",
+      "data": "https://2libra.com/post/latest",
+      "openIn": "same-tab"
+    },
+    {
+      "id": "g3p7kbzm",
+      "name": "今日热议",
+      "icon": "🔥",
+      "type": "url",
+      "data": "https://2libra.com/post/hot/today",
+      "openIn": "same-tab"
+    },
+    {
+      "id": "svoiq3sz",
+      "name": "近期热议",
+      "icon": "🔥",
+      "type": "url",
+      "data": "https://2libra.com/post/hot/recent",
+      "openIn": "same-tab"
+    },
+    {
+      "id": "pivybx9n",
+      "name": "通知",
+      "icon": "lucide:bell",
+      "type": "url",
+      "data": "https://2libra.com/notifications",
+      "openIn": "same-tab"
+    },
+    {
+      "id": "q0s43wxr",
+      "name": "金币",
+      "icon": "lucide:bitcoin",
+      "type": "url",
+      "data": "https://2libra.com/coins",
+      "openIn": "same-tab"
+    },
+    {
+      "id": "2libra_search",
+      "name": "Google 搜索",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://www.google.com/search?q=site:2libra.com%20{selected||current_title}",
+      "openIn": "new-tab"
+    }
+  ],
+  "itemsPerRow": 2
+}

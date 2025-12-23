@@ -1,0 +1,71 @@
+{
+  "id": "v2ex_group",
+  "name": "V2EX",
+  "icon": "url:https://www.v2ex.com/favicon.ico",
+  "match": [
+    "*://www.v2ex.com/*",
+    "*://v2ex.com/*",
+    "*://*.v2ex.com/*",
+    "*://global.v2ex.co/*"
+  ],
+  "defaultOpen": "same-tab",
+  "items": [
+    {
+      "id": "rexmfgc5",
+      "name": "最热",
+      "icon": "🔥",
+      "type": "url",
+      "data": "/?tab=hot",
+      "openIn": "same-tab"
+    },
+    {
+      "id": "9hbsfrw1",
+      "name": "创意",
+      "icon": "💡",
+      "type": "url",
+      "data": "/?tab=creative",
+      "openIn": "same-tab"
+    },
+    {
+      "id": "zr14ffbp",
+      "name": "全部",
+      "icon": "lucide:link",
+      "type": "url",
+      "data": "/?tab=all",
+      "openIn": "same-tab"
+    },
+    {
+      "id": "v0uxrv30",
+      "name": "全站最近更新列表",
+      "icon": "lucide:link",
+      "type": "url",
+      "data": "/changes",
+      "openIn": "same-tab"
+    },
+    {
+      "id": "w08vm9vt",
+      "name": "水深火热",
+      "icon": "lucide:link",
+      "type": "url",
+      "data": "/go/flamewar",
+      "openIn": "same-tab",
+      "hidden": true
+    },
+    {
+      "id": "evev9l6r",
+      "name": "提醒",
+      "icon": "lucide:bell",
+      "type": "url",
+      "data": "/notifications",
+      "openIn": "same-tab"
+    },
+    {
+      "id": "v2ex_search",
+      "name": "Google 搜索",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://www.google.com/search?q=site:v2ex.com%20{selected||current_title}",
+      "openIn": "new-tab"
+    }
+  ]
+}

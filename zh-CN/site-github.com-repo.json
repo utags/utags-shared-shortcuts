@@ -1,0 +1,34 @@
+{
+  "id": "github_repo",
+  "name": "GitHub Repo",
+  "icon": "url:https://github.com/favicon.ico",
+  "match": [
+    "!/https://github\\.com/(topics|collections|trending|resources)/.*/",
+    "/https://github\\.com/\\w+/\\w+(/.*)?$/"
+  ],
+  "defaultOpen": "same-tab",
+  "items": [
+    {
+      "id": "nkv2f0hp",
+      "name": "Home",
+      "type": "url",
+      "data": "https://github.com/{p:1||t:utags}/{p:2||t:utags}",
+      "openIn": "same-tab",
+      "icon": "lucide:home"
+    },
+    {
+      "id": "mw2j0leg",
+      "name": "Issues",
+      "type": "url",
+      "data": "https://github.com/{p:1||t:utags}/{p:2||t:utags}/issues",
+      "openIn": "same-tab"
+    },
+    {
+      "id": "tuonitkh",
+      "name": "Pull requests",
+      "type": "url",
+      "data": "https://github.com/{p:1||t:utags}/{p:2||t:utags}/pulls",
+      "openIn": "same-tab"
+    }
+  ]
+}

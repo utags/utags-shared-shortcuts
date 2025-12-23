@@ -1,0 +1,23 @@
+{
+  "id": "2libra_com_post",
+  "name": "2libra > 主题",
+  "displayName": "主题",
+  "icon": "lucide:messages-square",
+  "match": [
+    "!*://2libra.com/post/hot/*",
+    "!*://2libra.com/post/latest",
+    "*://2libra.com/post/*",
+    "*://2libra.com/post-flat/*"
+  ],
+  "defaultOpen": "same-tab",
+  "items": [
+    {
+      "id": "5bwly4kb",
+      "name": "切换评论模式",
+      "icon": "lucide:refresh-cw",
+      "type": "js",
+      "data": "return location.pathname.includes('/post/') ? location.pathname.replace('/post/', '/post-flat/') : location.pathname.replace('/post-flat/', '/post/')",
+      "openIn": "same-tab"
+    }
+  ]
+}
