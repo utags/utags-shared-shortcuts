@@ -1,0 +1,20 @@
+{
+  "name": "utags-shared-shortcuts",
+  "version": "1.0.0",
+  "description": "Shared shortcuts configuration for [UTags Shortcuts](https://github.com/utags/userscripts/tree/main/utags-shortcuts).",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write .",
+    "build": "node scripts/build_groups.js && node scripts/update_readme.js && prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "utags",
+    "shortcuts"
+  ],
+  "author": "Pipecraft",
+  "devDependencies": {
+    "js-yaml": "^4.1.1",
+    "prettier": "^3.7.4"
+  }
+}

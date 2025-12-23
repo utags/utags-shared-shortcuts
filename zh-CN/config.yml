@@ -1,0 +1,14 @@
+all_search_groups:
+  - search_group_web
+  - search_group_image
+  - search_group_translate
+  - search_group_knowledge
+  - search_group_video
+  - search_group_sociality
+  - search_group_shopping
+  - search_group_scholar
+  - search_group_ai
+
+plugin_groups:
+  - search_group_userscript
+  - search_group_extension

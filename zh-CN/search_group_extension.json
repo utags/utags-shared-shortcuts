@@ -1,0 +1,37 @@
+{
+  "id": "search_group_extension",
+  "name": "浏览器扩展",
+  "icon": "lucide:puzzle",
+  "match": [
+    "https://chromewebstore.google.com/search/*",
+    "https://microsoftedge.microsoft.com/addons/search/*",
+    "https://addons.mozilla.org/zh-CN/firefox/search/*",
+    "*"
+  ],
+  "defaultOpen": "new-tab",
+  "collapsed": false,
+  "itemsPerRow": 3,
+  "items": [
+    {
+      "id": "chrome_extension",
+      "name": "Chrome 扩展",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://chromewebstore.google.com/search/{selected||query||t:utags}"
+    },
+    {
+      "id": "edge_extension",
+      "name": "Edge 扩展",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://microsoftedge.microsoft.com/addons/search/{selected||query||t:utags}"
+    },
+    {
+      "id": "firefox_extension",
+      "name": "Firefox 扩展",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://addons.mozilla.org/zh-CN/firefox/search/?q={selected||query||t:utags}"
+    }
+  ]
+}

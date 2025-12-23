@@ -1,0 +1,82 @@
+{
+  "id": "search_group_userscript",
+  "name": "用户脚本",
+  "icon": "lucide:puzzle",
+  "match": [
+    "https://greasyfork.org/*",
+    "https://openuserjs.org/*",
+    "https://scriptcat.org/*",
+    "https://github.com/search?type=code&q=language%3AJavaScript+%22%3D%3DUserScript%3D%3D%22+*",
+    "https://gist.github.com/search?l=JavaScript&q=%22%3D%3DUserScript%3D%3D%22+*",
+    "https://sleazyfork.org/*",
+    "*"
+  ],
+  "defaultOpen": "new-tab",
+  "collapsed": false,
+  "itemsPerRow": 1,
+  "items": [
+    {
+      "id": "greasy_fork",
+      "name": "Greasy Fork",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://greasyfork.org/scripts?filter_locale=0&q={selected||query||hostname_top_level}"
+    },
+    {
+      "id": "greasy_fork_domain",
+      "name": "Greasy Fork 域名搜索",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://greasyfork.org/scripts/by-site/{hostname_top_level}?filter_locale=0"
+    },
+    {
+      "id": "openuserjs",
+      "name": "OpenUserJS",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://openuserjs.org/?q={selected||query||hostname_top_level}"
+    },
+    {
+      "id": "scriptcat",
+      "name": "ScriptCat",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://scriptcat.org/search?keyword={selected||query||hostname_top_level}"
+    },
+    {
+      "id": "scriptcat_domain",
+      "name": "ScriptCat 域名搜索",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://scriptcat.org/search?domain={hostname_top_level}"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://github.com/search?type=code&q=language%3AJavaScript+%22%3D%3DUserScript%3D%3D%22+{selected||query||hostname_top_level}"
+    },
+    {
+      "id": "github_gist",
+      "name": "GitHub Gist",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://gist.github.com/search?l=JavaScript&q=%22%3D%3DUserScript%3D%3D%22+{selected||query||hostname_top_level}"
+    },
+    {
+      "id": "sleazy_fork",
+      "name": "Sleazy Fork",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://sleazyfork.org/scripts?filter_locale=0&q={selected||query||hostname_top_level}"
+    },
+    {
+      "id": "sleazy_fork_domain",
+      "name": "Sleazy Fork 域名搜索",
+      "icon": "favicon",
+      "type": "url",
+      "data": "https://sleazyfork.org/scripts/by-site/{hostname_top_level}?filter_locale=0"
+    }
+  ]
+}
