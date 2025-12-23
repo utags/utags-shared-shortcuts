@@ -3,6 +3,13 @@
   "name": "网页",
   "icon": "lucide:search",
   "match": [
+    "https://www.google.com/search?*",
+    "https://www.bing.com/search?*",
+    "https://www.baidu.com/s?*",
+    "https://chat.baidu.com/search?*",
+    "https://www.so.com/s?*",
+    "https://duckduckgo.com/*",
+    "https://yandex.com/search/*",
     "*"
   ],
   "defaultOpen": "new-tab",
