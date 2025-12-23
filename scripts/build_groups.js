@@ -31,11 +31,23 @@ try {
 
   // Iterate over each collection key in config
   for (const collectionName of Object.keys(config)) {
-    const groupList = config[collectionName]
+    const configItem = config[collectionName]
 
-    if (!Array.isArray(groupList)) {
+    // Normalize input: support both array (legacy) and object with groups property
+    let groupList = []
+    let meta = {}
+
+    if (Array.isArray(configItem)) {
+      groupList = configItem
+    } else if (configItem && Array.isArray(configItem.groups)) {
+      groupList = configItem.groups
+      meta = {
+        name: configItem.name,
+        description: configItem.description,
+      }
+    } else {
       console.warn(
-        `Warning: Key "${collectionName}" is not a list of groups. Skipping.`
+        `Warning: Key "${collectionName}" is not a valid collection configuration. Skipping.`
       )
       continue
     }
@@ -63,6 +75,7 @@ try {
 
     // Create aggregated object
     const aggregatedData = {
+      ...meta, // Include optional name and description
       groups: groups,
     }
 

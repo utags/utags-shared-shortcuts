@@ -6,6 +6,8 @@
   "scripts": {
     "format": "prettier --write .",
     "build": "node scripts/build_groups.js && node scripts/update_readme.js && prettier --write .",
+    "build:collections": "node scripts/build_groups.js && prettier --write .",
+    "build:readme": "node scripts/update_readme.js && prettier --write .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

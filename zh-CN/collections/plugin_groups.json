@@ -1,4 +1,6 @@
 {
+  "name": "插件分组",
+  "description": "包含用户脚本和浏览器扩展的分组",
   "groups": [
     {
       "id": "search_group_userscript",

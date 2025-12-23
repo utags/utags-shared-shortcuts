@@ -77,7 +77,9 @@ try {
 
   // Collect all unique groups referenced in config
   const allReferencedGroups = new Set()
-  Object.values(config).forEach((list) => {
+  Object.values(config).forEach((item) => {
+    // Support both array and object format
+    const list = Array.isArray(item) ? item : item.groups || []
     if (Array.isArray(list)) {
       list.forEach((g) => allReferencedGroups.add(g))
     }
@@ -122,21 +124,25 @@ try {
         const content = fs.readFileSync(collectionFile, 'utf8')
         const data = JSON.parse(content)
 
-        const includedGroups = config[collectionName] || []
+        const configItem = config[collectionName]
+        const includedGroups = Array.isArray(configItem)
+          ? configItem
+          : configItem.groups || []
+
+        // Use name/desc from config if available, fallback to data or defaults
+        const displayName =
+          (configItem && configItem.name) || data.name || collectionName
+        const displayDesc =
+          (configItem && configItem.description) || data.description || ''
+
         const includedGroupsStr = includedGroups
           .map((g) => `\`${g}\``)
           .join(', ')
 
         collectionRows.push({
           filename: `${collectionName}.json`,
-          name:
-            collectionName === 'all_groups'
-              ? '所有分组'
-              : 'all_search_groups'
-                ? '所有搜索分组'
-                : collectionName === 'plugin_groups'
-                  ? '插件分组'
-                  : collectionName,
+          name: displayName,
+          description: displayDesc,
           count: getCollectionShortcutsCount(data),
           groupCount: includedGroups.length,
           date: getFileDate(collectionFile),
@@ -150,11 +156,12 @@ try {
   }
 
   let collectionTable =
-    '| 集合名 | 文件名 | shortcuts 个数 | 分组个数 | 包含分组 | 最后更新时间 | 下载链接 |\n'
-  collectionTable += '| :--- | :--- | :---: | :---: | :--- | :---: | :--- |\n'
+    '| 集合名 | 文件名 | 描述 | shortcuts 个数 | 分组个数 | 包含分组 | 最后更新时间 | 下载链接 |\n'
+  collectionTable +=
+    '| :--- | :--- | :--- | :---: | :---: | :--- | :---: | :--- |\n'
   collectionRows.forEach((row) => {
     const fileLink = `[${row.filename}](https://github.com/utags/utags-shared-shortcuts/blob/main/zh-CN/collections/${row.filename})`
-    collectionTable += `| ${row.name} | ${fileLink} | ${row.count} | ${row.groupCount} | ${row.included} | ${row.date} | ${row.rawUrl} |\n`
+    collectionTable += `| ${row.name} | ${fileLink} | ${row.description} | ${row.count} | ${row.groupCount} | ${row.included} | ${row.date} | ${row.rawUrl} |\n`
   })
 
   // 3. Update README.md

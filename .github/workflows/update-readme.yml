@@ -36,11 +36,22 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Run build script
-        run: pnpm run build
+      - name: Build collections
+        run: pnpm run build:collections
 
-      - name: Commit and push changes
+      - name: Commit collections
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: 'chore: update README and collections [skip ci]'
-          file_pattern: 'zh-CN/README.md zh-CN/collections/*.json'
+          commit_message: 'chore: update collections [skip ci]'
+          # commit all to include formated files
+          # file_pattern: 'zh-CN/collections/*.json'
+          skip_push: true
+
+      - name: Update README
+        run: pnpm run build:readme
+
+      - name: Commit README
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: update README [skip ci]'
+          file_pattern: 'zh-CN/README.md'

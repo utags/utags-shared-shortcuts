@@ -1,4 +1,6 @@
 {
+  "name": "2libra 分组",
+  "description": "2libra 站点相关分组",
   "groups": [
     {
       "id": "2libra_com_default",
