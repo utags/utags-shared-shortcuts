@@ -87,7 +87,7 @@
         "https://gemini.google.com/*",
         "https://claude.ai/*",
         "https://www.doubao.com/chat/*",
-        "https://kimi.moonshot.cn/*",
+        "https://www.kimi.com/*",
         "https://chat.deepseek.com/*",
         "https://www.perplexity.ai/search/*",
         "https://metaso.cn/*",
@@ -132,7 +132,7 @@
           "name": "Kimi",
           "icon": "favicon",
           "type": "url",
-          "data": "https://kimi.moonshot.cn/"
+          "data": "https://www.kimi.com/"
         },
         {
           "id": "deepseek_ai",
