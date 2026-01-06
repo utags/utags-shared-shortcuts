@@ -11,6 +11,7 @@ builtin_groups:
     - site-github.com-repo
     - site-v2ex.com
     - site-linux.do
+    - site-linux.do-my
     - site-2libra.com-invite
     - site-2libra.com
     - site-2libra.com-post
@@ -46,6 +47,13 @@ github_groups:
     - site-github.com-repo
     - site-github.com-utils
 
+linuxdo_groups:
+  name: Linux.do 分组
+  description: Linux.do 站点相关分组
+  groups:
+    - site-linux.do
+    - site-linux.do-my
+
 2libra_groups:
   name: 2libra 分组
   description: 2libra 站点相关分组
@@ -76,6 +84,7 @@ all_groups:
     - site-github.com-utils
     - site-v2ex.com
     - site-linux.do
+    - site-linux.do-my
     - site-2libra.com
     - site-2libra.com-post
     - site-2libra.com-invite

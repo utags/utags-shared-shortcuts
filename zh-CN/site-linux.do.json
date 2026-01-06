@@ -72,22 +72,22 @@
       "openIn": "new-tab"
     },
     {
-      "id": "0eybi3bv",
-      "name": "leaderbooard",
+      "id": "linuxdo_leaderboard",
+      "name": "Leaderbooard",
       "type": "url",
       "data": "https://linux.do/leaderboard",
       "openIn": "new-tab",
       "icon": "lucide:trophy"
     },
     {
-      "id": "oy4c2de9",
+      "id": "linuxdo_connect",
       "name": "Connect",
       "type": "url",
       "data": "https://connect.linux.do/",
       "openIn": "new-tab"
     },
     {
-      "id": "credit",
+      "id": "linuxdo_credit",
       "name": "LINUX DO Credit",
       "icon": "lucide:credit-card",
       "type": "url",
@@ -95,7 +95,7 @@
       "openIn": "new-tab"
     },
     {
-      "id": "vt4y2688",
+      "id": "linuxdo_challenge",
       "name": "Challenge",
       "type": "url",
       "data": "https://linux.do/challenge?redirect={current_url_encoded}",
@@ -103,7 +103,7 @@
       "icon": "lucide:swords"
     },
     {
-      "id": "20p30jnz",
+      "id": "linuxdo_cdk",
       "name": "分发站",
       "type": "url",
       "data": "https://cdk.linux.do/",
@@ -111,7 +111,31 @@
       "icon": "lucide:ticket-check"
     },
     {
-      "id": "q1df8ev8",
+      "id": "linuxdo_rate",
+      "name": "评分站",
+      "type": "url",
+      "data": "https://rate.linux.do/",
+      "openIn": "new-tab",
+      "icon": "lucide:thumbs-up"
+    },
+    {
+      "id": "linuxdo_lottery",
+      "name": "抽奖站",
+      "type": "url",
+      "data": "https://lottery.linux.do/",
+      "openIn": "new-tab",
+      "icon": "lucide:dice-6"
+    },
+    {
+      "id": "linuxdo_wiki",
+      "name": "Wiki",
+      "type": "url",
+      "data": "https://wiki.linux.do/",
+      "openIn": "new-tab",
+      "icon": "lucide:book"
+    },
+    {
+      "id": "linuxdo_community",
       "name": "社区子系统和元宇宙",
       "type": "url",
       "data": "https://linux.do/pub/resources",
@@ -119,11 +143,28 @@
       "icon": "lucide:infinity"
     },
     {
-      "id": "tt9yac9m",
+      "id": "linuxdo_channel",
+      "name": "LINUX DO 频道",
+      "type": "url",
+      "data": "https://t.me/s/linux_do_channel",
+      "openIn": "new-tab",
+      "icon": "lucide:send"
+    },
+    {
+      "id": "idcflare",
       "name": "IDC Flare",
       "type": "url",
       "data": "https://idcflare.com/",
-      "openIn": "new-tab"
+      "openIn": "new-tab",
+      "icon": "lucide:server"
+    },
+    {
+      "id": "safemode",
+      "name": "Safe Mode",
+      "type": "url",
+      "data": "?safe_mode=no_themes%2Cno_plugins",
+      "openIn": "new-tab",
+      "icon": "lucide:shield"
     }
   ],
   "itemsPerRow": 2

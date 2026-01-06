@@ -1,0 +1,293 @@
+{
+  "name": "Linux.do 分组",
+  "description": "Linux.do 站点相关分组",
+  "groups": [
+    {
+      "id": "linuxdo_group",
+      "name": "LINUX DO",
+      "icon": "url:https://wsrv.nl/?w=64&h=64&url=https%3A%2F%2Ft3.gstatic.com%2FfaviconV2%3Fclient%3DSOCIAL%26type%3DFAVICON%26fallback_opts%3DTYPE%2CSIZE%2CURL%26url%3Dhttps%3A%2F%2Flinux.do%26size%3D64",
+      "match": [
+        "*://linux.do/*",
+        "*://*.linux.do/*"
+      ],
+      "defaultOpen": "same-tab",
+      "items": [
+        {
+          "id": "fq7s1vg6",
+          "name": "最新话题",
+          "type": "url",
+          "data": "https://linux.do/latest",
+          "openIn": "same-tab"
+        },
+        {
+          "id": "empa8f6o",
+          "name": "创建日期排序",
+          "type": "url",
+          "data": "?ascending=false&order=created",
+          "openIn": "same-tab",
+          "icon": "lucide:calendar-arrow-down"
+        },
+        {
+          "id": "ghjguteh",
+          "name": "未读（Unread）",
+          "type": "url",
+          "data": "https://linux.do/unread",
+          "openIn": "same-tab",
+          "icon": "lucide:book-plus"
+        },
+        {
+          "id": "fiahbsfb",
+          "name": "始皇",
+          "type": "url",
+          "data": "https://linux.do/u/neo/activity",
+          "openIn": "same-tab",
+          "icon": "lucide:crown"
+        },
+        {
+          "id": "v7xfwc1x",
+          "name": "快问快答",
+          "type": "url",
+          "data": "https://linux.do/tag/%E5%BF%AB%E9%97%AE%E5%BF%AB%E7%AD%94",
+          "openIn": "same-tab",
+          "icon": "lucide:circle-question-mark"
+        },
+        {
+          "id": "03v787o2",
+          "name": "精华神帖",
+          "type": "url",
+          "data": "https://linux.do/tag/%E7%B2%BE%E5%8D%8E%E7%A5%9E%E5%B8%96",
+          "openIn": "same-tab",
+          "icon": "lucide:thumbs-up"
+        },
+        {
+          "id": "linuxdo_search",
+          "name": "搜索",
+          "icon": "lucide:search",
+          "type": "url",
+          "data": "https://linux.do/search?q={selected||current_title||t:默认值}%20order%3Alatest",
+          "openIn": "new-tab"
+        },
+        {
+          "id": "linuxdo_google_search",
+          "name": "Google 搜索",
+          "icon": "favicon",
+          "type": "url",
+          "data": "https://www.google.com/search?q=site:linux.do%20{selected||current_title}",
+          "openIn": "new-tab"
+        },
+        {
+          "id": "linuxdo_leaderboard",
+          "name": "Leaderbooard",
+          "type": "url",
+          "data": "https://linux.do/leaderboard",
+          "openIn": "new-tab",
+          "icon": "lucide:trophy"
+        },
+        {
+          "id": "linuxdo_connect",
+          "name": "Connect",
+          "type": "url",
+          "data": "https://connect.linux.do/",
+          "openIn": "new-tab"
+        },
+        {
+          "id": "linuxdo_credit",
+          "name": "LINUX DO Credit",
+          "icon": "lucide:credit-card",
+          "type": "url",
+          "data": "https://credit.linux.do/home",
+          "openIn": "new-tab"
+        },
+        {
+          "id": "linuxdo_challenge",
+          "name": "Challenge",
+          "type": "url",
+          "data": "https://linux.do/challenge?redirect={current_url_encoded}",
+          "openIn": "same-tab",
+          "icon": "lucide:swords"
+        },
+        {
+          "id": "linuxdo_cdk",
+          "name": "分发站",
+          "type": "url",
+          "data": "https://cdk.linux.do/",
+          "openIn": "new-tab",
+          "icon": "lucide:ticket-check"
+        },
+        {
+          "id": "linuxdo_rate",
+          "name": "评分站",
+          "type": "url",
+          "data": "https://rate.linux.do/",
+          "openIn": "new-tab",
+          "icon": "lucide:thumbs-up"
+        },
+        {
+          "id": "linuxdo_lottery",
+          "name": "抽奖站",
+          "type": "url",
+          "data": "https://lottery.linux.do/",
+          "openIn": "new-tab",
+          "icon": "lucide:dice-6"
+        },
+        {
+          "id": "linuxdo_wiki",
+          "name": "Wiki",
+          "type": "url",
+          "data": "https://wiki.linux.do/",
+          "openIn": "new-tab",
+          "icon": "lucide:book"
+        },
+        {
+          "id": "linuxdo_community",
+          "name": "社区子系统和元宇宙",
+          "type": "url",
+          "data": "https://linux.do/pub/resources",
+          "openIn": "new-tab",
+          "icon": "lucide:infinity"
+        },
+        {
+          "id": "linuxdo_channel",
+          "name": "LINUX DO 频道",
+          "type": "url",
+          "data": "https://t.me/s/linux_do_channel",
+          "openIn": "new-tab",
+          "icon": "lucide:send"
+        },
+        {
+          "id": "idcflare",
+          "name": "IDC Flare",
+          "type": "url",
+          "data": "https://idcflare.com/",
+          "openIn": "new-tab",
+          "icon": "lucide:server"
+        },
+        {
+          "id": "safemode",
+          "name": "Safe Mode",
+          "type": "url",
+          "data": "?safe_mode=no_themes%2Cno_plugins",
+          "openIn": "new-tab",
+          "icon": "lucide:shield"
+        }
+      ],
+      "itemsPerRow": 2
+    },
+    {
+      "id": "linuxdo_my_group",
+      "name": "LINUX DO - MY",
+      "icon": "url:https://wsrv.nl/?w=64&h=64&url=https%3A%2F%2Ft3.gstatic.com%2FfaviconV2%3Fclient%3DSOCIAL%26type%3DFAVICON%26fallback_opts%3DTYPE%2CSIZE%2CURL%26url%3Dhttps%3A%2F%2Flinux.do%26size%3D64",
+      "match": [
+        "*://linux.do/*",
+        "*://*.linux.do/*"
+      ],
+      "defaultOpen": "same-tab",
+      "items": [
+        {
+          "id": "zyf30x98",
+          "name": "未读话题（unread）",
+          "icon": "lucide:eye",
+          "type": "url",
+          "data": "https://linux.do/unread"
+        },
+        {
+          "id": "irdi1l9s",
+          "name": "未读话题（unseen）",
+          "icon": "lucide:eye",
+          "type": "url",
+          "data": "https://linux.do/unseen"
+        },
+        {
+          "id": "se9wmmqu",
+          "name": "我关注的人的动态",
+          "icon": "lucide:user-check",
+          "type": "url",
+          "data": "https://linux.do/my/follow/feed"
+        },
+        {
+          "id": "917ql3b2",
+          "name": "我关注的人",
+          "icon": "lucide:user-check",
+          "type": "url",
+          "data": "https://linux.do/my/follow/following"
+        },
+        {
+          "id": "mtnq2qzr",
+          "name": "通知",
+          "icon": "lucide:bell",
+          "type": "url",
+          "data": "https://linux.do/my/notifications"
+        },
+        {
+          "id": "xr56tpdx",
+          "name": "消息",
+          "icon": "lucide:inbox",
+          "type": "url",
+          "data": "https://linux.do/my/messages"
+        },
+        {
+          "id": "9t7a3qz3",
+          "name": "浏览历史记录",
+          "icon": "lucide:history",
+          "type": "url",
+          "data": "https://linux.do/my/activity/read"
+        },
+        {
+          "id": "mdboed22",
+          "name": "书签",
+          "icon": "lucide:bookmark-check",
+          "type": "url",
+          "data": "https://linux.do/my/activity/bookmarks"
+        },
+        {
+          "id": "f0644ar0",
+          "name": "我的帖子",
+          "icon": "lucide:check-square",
+          "type": "url",
+          "data": "https://linux.do/my/activity"
+        },
+        {
+          "id": "kkb7tcrx",
+          "name": "我创建的话题",
+          "icon": "lucide:check-square",
+          "type": "url",
+          "data": "https://linux.do/my/activity/topics"
+        },
+        {
+          "id": "8m7k73qk",
+          "name": "我创建的话题（按创建时间排序）",
+          "icon": "lucide:check-square",
+          "type": "url",
+          "data": "https://linux.do/my/activity/topics?ascending=false&order=created"
+        },
+        {
+          "id": "13qpf8vw",
+          "name": "免打扰设置（屏蔽类别与标签）",
+          "icon": "lucide:eye-off",
+          "type": "url",
+          "data": "https://linux.do/my/preferences/tracking"
+        },
+        {
+          "id": "001a3iqh",
+          "name": "用户屏蔽管理",
+          "icon": "lucide:eye-off",
+          "type": "url",
+          "data": "https://linux.do/my/preferences/users"
+        },
+        {
+          "id": "k1inrrfh",
+          "name": "徽章",
+          "icon": "lucide:award",
+          "type": "url",
+          "data": "https://linux.do/my/badges"
+        }
+      ],
+      "collapsed": false,
+      "itemsPerRow": 1,
+      "hidden": false,
+      "displayStyle": "icon-title",
+      "iconSize": "medium",
+      "iconItemsPerRow": 0
+    }
+  ]
+}
