@@ -37,8 +37,10 @@ try {
   let count = 0
   if (data.items) {
     data.items.forEach((item) => {
-      item.id = generateId()
-      count++
+      if (!item.id) {
+        item.id = generateId()
+        count++
+      }
     })
   }
 

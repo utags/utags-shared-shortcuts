@@ -951,15 +951,13 @@
           "id": "fq7s1vg6",
           "name": "最新话题",
           "type": "url",
-          "data": "https://linux.do/latest",
-          "openIn": "same-tab"
+          "data": "https://linux.do/latest"
         },
         {
           "id": "empa8f6o",
           "name": "创建日期排序",
           "type": "url",
           "data": "?ascending=false&order=created",
-          "openIn": "same-tab",
           "icon": "lucide:calendar-arrow-down"
         },
         {
@@ -967,7 +965,6 @@
           "name": "未读（Unread）",
           "type": "url",
           "data": "https://linux.do/unread",
-          "openIn": "same-tab",
           "icon": "lucide:book-plus"
         },
         {
@@ -975,7 +972,6 @@
           "name": "始皇",
           "type": "url",
           "data": "https://linux.do/u/neo/activity",
-          "openIn": "same-tab",
           "icon": "lucide:crown"
         },
         {
@@ -983,7 +979,6 @@
           "name": "快问快答",
           "type": "url",
           "data": "https://linux.do/tag/%E5%BF%AB%E9%97%AE%E5%BF%AB%E7%AD%94",
-          "openIn": "same-tab",
           "icon": "lucide:circle-question-mark"
         },
         {
@@ -991,7 +986,6 @@
           "name": "精华神帖",
           "type": "url",
           "data": "https://linux.do/tag/%E7%B2%BE%E5%8D%8E%E7%A5%9E%E5%B8%96",
-          "openIn": "same-tab",
           "icon": "lucide:thumbs-up"
         },
         {
@@ -1038,7 +1032,6 @@
           "name": "Challenge",
           "type": "url",
           "data": "https://linux.do/challenge?redirect={current_url_encoded}",
-          "openIn": "same-tab",
           "icon": "lucide:swords"
         },
         {
@@ -1104,6 +1097,14 @@
           "data": "?safe_mode=no_themes%2Cno_plugins",
           "openIn": "new-tab",
           "icon": "lucide:shield"
+        },
+        {
+          "id": "cdn-trace",
+          "name": "CDN Trace",
+          "type": "url",
+          "data": "https://linux.do/cdn-cgi/trace",
+          "openIn": "new-tab",
+          "icon": "lucide:info"
         }
       ],
       "itemsPerRow": 2
@@ -1238,47 +1239,104 @@
           "name": "首页",
           "icon": "favicon",
           "type": "url",
-          "data": "https://2libra.com/",
-          "openIn": "same-tab"
+          "data": "https://2libra.com/"
         },
         {
           "id": "aupy1kcr",
           "name": "新发表",
           "type": "url",
-          "data": "https://2libra.com/post/latest",
-          "openIn": "same-tab"
+          "data": "https://2libra.com/post/latest"
         },
         {
           "id": "g3p7kbzm",
           "name": "今日热议",
           "icon": "🔥",
           "type": "url",
-          "data": "https://2libra.com/post/hot/today",
-          "openIn": "same-tab"
+          "data": "https://2libra.com/post/hot/today"
         },
         {
           "id": "svoiq3sz",
           "name": "近期热议",
           "icon": "🔥",
           "type": "url",
-          "data": "https://2libra.com/post/hot/recent",
-          "openIn": "same-tab"
-        },
-        {
-          "id": "pivybx9n",
-          "name": "通知",
-          "icon": "lucide:bell",
-          "type": "url",
-          "data": "https://2libra.com/notifications",
-          "openIn": "same-tab"
+          "data": "https://2libra.com/post/hot/recent"
         },
         {
           "id": "q0s43wxr",
           "name": "金币",
           "icon": "lucide:bitcoin",
           "type": "url",
-          "data": "https://2libra.com/coins",
-          "openIn": "same-tab"
+          "data": "https://2libra.com/coins"
+        },
+        {
+          "id": "62lxprfo",
+          "name": "金币排行榜",
+          "icon": "lucide:bitcoin",
+          "type": "url",
+          "data": "https://2libra.com/coins/ranking"
+        },
+        {
+          "id": "pivybx9n",
+          "name": "通知",
+          "icon": "lucide:bell",
+          "type": "url",
+          "data": "https://2libra.com/notifications"
+        },
+        {
+          "id": "h42yep0y",
+          "name": "我的主页",
+          "icon": "lucide:circle-user",
+          "type": "url",
+          "data": "https://2libra.com/user/{v:uid}/about"
+        },
+        {
+          "id": "xqia88e1",
+          "name": "我的帖子",
+          "icon": "lucide:user-pen",
+          "type": "url",
+          "data": "https://2libra.com/user/{v:uid}/post"
+        },
+        {
+          "id": "s8vuhdyz",
+          "name": "我的评论",
+          "icon": "lucide:user-pen",
+          "type": "url",
+          "data": "https://2libra.com/user/{v:uid}/comment"
+        },
+        {
+          "id": "4n1sl5h9",
+          "name": "我的收藏",
+          "icon": "lucide:user-star",
+          "type": "url",
+          "data": "https://2libra.com/user/{v:uid}/favorites"
+        },
+        {
+          "id": "19lg834u",
+          "name": "我的足迹",
+          "icon": "lucide:user-round-search",
+          "type": "url",
+          "data": "https://2libra.com/user/{v:uid}/history"
+        },
+        {
+          "id": "tzf5f16t",
+          "name": "设置",
+          "icon": "lucide:user-cog",
+          "type": "url",
+          "data": "https://2libra.com/user/setting/profile"
+        },
+        {
+          "id": "yq0vmnzq",
+          "name": "反馈",
+          "icon": "lucide:message-square-heart",
+          "type": "url",
+          "data": "https://2libra.com/node/forum/community"
+        },
+        {
+          "id": "mhl1xuh2",
+          "name": "管理日志",
+          "icon": "lucide:shield-check",
+          "type": "url",
+          "data": "https://2libra.com/guardian/logs"
         },
         {
           "id": "2libra_search",
@@ -1289,7 +1347,14 @@
           "openIn": "new-tab"
         }
       ],
-      "itemsPerRow": 2
+      "itemsPerRow": 2,
+      "variables": [
+        {
+          "id": "tzser3gu",
+          "key": "uid",
+          "value": "your-id"
+        }
+      ]
     },
     {
       "id": "2libra_com_post",
@@ -1319,16 +1384,19 @@
       "name": "2Libra 邀请码",
       "icon": "url:https://2libra.com/favicon.ico",
       "match": [
-        "https://2libra.com/?ref=utags-shortcuts"
+        "https://2libra.com/?iid=1AeoTgXc&*",
+        "https://2libra.com/?ref=utags-shortcuts*",
+        "https://2libra.com/auth/signup*",
+        "https://2libra.com/?iid=1AeoTgXc"
       ],
       "defaultOpen": "same-tab",
       "items": [
         {
           "id": "1AeoTgXc",
-          "name": "注册后额外获得 1,000 金币",
+          "name": "注册后可额外获得 1,000 金币",
           "icon": "favicon",
           "type": "url",
-          "data": "https://2libra.com/auth/signup/1AeoTgXc",
+          "data": "https://2libra.com/?iid=1AeoTgXc",
           "openIn": "same-tab"
         }
       ]
@@ -1363,7 +1431,7 @@
           "name": "2Libra",
           "icon": "favicon",
           "type": "url",
-          "data": "https://2libra.com/?ref=utags-shortcuts",
+          "data": "https://2libra.com/?iid=1AeoTgXc&ref=utags-shortcuts",
           "openIn": "new-tab"
         },
         {

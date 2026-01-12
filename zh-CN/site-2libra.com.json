@@ -12,47 +12,104 @@
       "name": "首页",
       "icon": "favicon",
       "type": "url",
-      "data": "https://2libra.com/",
-      "openIn": "same-tab"
+      "data": "https://2libra.com/"
     },
     {
       "id": "aupy1kcr",
       "name": "新发表",
       "type": "url",
-      "data": "https://2libra.com/post/latest",
-      "openIn": "same-tab"
+      "data": "https://2libra.com/post/latest"
     },
     {
       "id": "g3p7kbzm",
       "name": "今日热议",
       "icon": "🔥",
       "type": "url",
-      "data": "https://2libra.com/post/hot/today",
-      "openIn": "same-tab"
+      "data": "https://2libra.com/post/hot/today"
     },
     {
       "id": "svoiq3sz",
       "name": "近期热议",
       "icon": "🔥",
       "type": "url",
-      "data": "https://2libra.com/post/hot/recent",
-      "openIn": "same-tab"
-    },
-    {
-      "id": "pivybx9n",
-      "name": "通知",
-      "icon": "lucide:bell",
-      "type": "url",
-      "data": "https://2libra.com/notifications",
-      "openIn": "same-tab"
+      "data": "https://2libra.com/post/hot/recent"
     },
     {
       "id": "q0s43wxr",
       "name": "金币",
       "icon": "lucide:bitcoin",
       "type": "url",
-      "data": "https://2libra.com/coins",
-      "openIn": "same-tab"
+      "data": "https://2libra.com/coins"
+    },
+    {
+      "id": "62lxprfo",
+      "name": "金币排行榜",
+      "icon": "lucide:bitcoin",
+      "type": "url",
+      "data": "https://2libra.com/coins/ranking"
+    },
+    {
+      "id": "pivybx9n",
+      "name": "通知",
+      "icon": "lucide:bell",
+      "type": "url",
+      "data": "https://2libra.com/notifications"
+    },
+    {
+      "id": "h42yep0y",
+      "name": "我的主页",
+      "icon": "lucide:circle-user",
+      "type": "url",
+      "data": "https://2libra.com/user/{v:uid}/about"
+    },
+    {
+      "id": "xqia88e1",
+      "name": "我的帖子",
+      "icon": "lucide:user-pen",
+      "type": "url",
+      "data": "https://2libra.com/user/{v:uid}/post"
+    },
+    {
+      "id": "s8vuhdyz",
+      "name": "我的评论",
+      "icon": "lucide:user-pen",
+      "type": "url",
+      "data": "https://2libra.com/user/{v:uid}/comment"
+    },
+    {
+      "id": "4n1sl5h9",
+      "name": "我的收藏",
+      "icon": "lucide:user-star",
+      "type": "url",
+      "data": "https://2libra.com/user/{v:uid}/favorites"
+    },
+    {
+      "id": "19lg834u",
+      "name": "我的足迹",
+      "icon": "lucide:user-round-search",
+      "type": "url",
+      "data": "https://2libra.com/user/{v:uid}/history"
+    },
+    {
+      "id": "tzf5f16t",
+      "name": "设置",
+      "icon": "lucide:user-cog",
+      "type": "url",
+      "data": "https://2libra.com/user/setting/profile"
+    },
+    {
+      "id": "yq0vmnzq",
+      "name": "反馈",
+      "icon": "lucide:message-square-heart",
+      "type": "url",
+      "data": "https://2libra.com/node/forum/community"
+    },
+    {
+      "id": "mhl1xuh2",
+      "name": "管理日志",
+      "icon": "lucide:shield-check",
+      "type": "url",
+      "data": "https://2libra.com/guardian/logs"
     },
     {
       "id": "2libra_search",
@@ -63,5 +120,12 @@
       "openIn": "new-tab"
     }
   ],
-  "itemsPerRow": 2
+  "itemsPerRow": 2,
+  "variables": [
+    {
+      "id": "tzser3gu",
+      "key": "uid",
+      "value": "your-id"
+    }
+  ]
 }

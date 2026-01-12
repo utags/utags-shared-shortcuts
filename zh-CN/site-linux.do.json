@@ -12,15 +12,13 @@
       "id": "fq7s1vg6",
       "name": "最新话题",
       "type": "url",
-      "data": "https://linux.do/latest",
-      "openIn": "same-tab"
+      "data": "https://linux.do/latest"
     },
     {
       "id": "empa8f6o",
       "name": "创建日期排序",
       "type": "url",
       "data": "?ascending=false&order=created",
-      "openIn": "same-tab",
       "icon": "lucide:calendar-arrow-down"
     },
     {
@@ -28,7 +26,6 @@
       "name": "未读（Unread）",
       "type": "url",
       "data": "https://linux.do/unread",
-      "openIn": "same-tab",
       "icon": "lucide:book-plus"
     },
     {
@@ -36,7 +33,6 @@
       "name": "始皇",
       "type": "url",
       "data": "https://linux.do/u/neo/activity",
-      "openIn": "same-tab",
       "icon": "lucide:crown"
     },
     {
@@ -44,7 +40,6 @@
       "name": "快问快答",
       "type": "url",
       "data": "https://linux.do/tag/%E5%BF%AB%E9%97%AE%E5%BF%AB%E7%AD%94",
-      "openIn": "same-tab",
       "icon": "lucide:circle-question-mark"
     },
     {
@@ -52,7 +47,6 @@
       "name": "精华神帖",
       "type": "url",
       "data": "https://linux.do/tag/%E7%B2%BE%E5%8D%8E%E7%A5%9E%E5%B8%96",
-      "openIn": "same-tab",
       "icon": "lucide:thumbs-up"
     },
     {
@@ -99,7 +93,6 @@
       "name": "Challenge",
       "type": "url",
       "data": "https://linux.do/challenge?redirect={current_url_encoded}",
-      "openIn": "same-tab",
       "icon": "lucide:swords"
     },
     {
@@ -165,6 +158,14 @@
       "data": "?safe_mode=no_themes%2Cno_plugins",
       "openIn": "new-tab",
       "icon": "lucide:shield"
+    },
+    {
+      "id": "cdn-trace",
+      "name": "CDN Trace",
+      "type": "url",
+      "data": "https://linux.do/cdn-cgi/trace",
+      "openIn": "new-tab",
+      "icon": "lucide:info"
     }
   ],
   "itemsPerRow": 2
