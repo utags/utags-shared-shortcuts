@@ -7,6 +7,7 @@ builtin_groups:
     - search_default
     - search_group_web
     - search_group_ai
+    - search_group_userscript
     - community_group
     - site-github.com-repo
     - site-v2ex.com
