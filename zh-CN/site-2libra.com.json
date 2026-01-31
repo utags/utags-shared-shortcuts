@@ -118,6 +118,20 @@
       "type": "url",
       "data": "https://www.google.com/search?q=site:2libra.com%20{selected||current_title}",
       "openIn": "new-tab"
+    },
+    {
+      "id": "73bhrs2i",
+      "name": "发帖",
+      "icon": "lucide:square-pen",
+      "type": "url",
+      "data": "https://2libra.com/post/create"
+    },
+    {
+      "id": "h3sgwhli",
+      "name": "RSS",
+      "icon": "lucide:rss",
+      "type": "url",
+      "data": "https://2libra.com/help/rss"
     }
   ],
   "itemsPerRow": 2,

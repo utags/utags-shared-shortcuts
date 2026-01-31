@@ -105,6 +105,13 @@
       "icon": "lucide:award",
       "type": "url",
       "data": "https://linux.do/my/badges"
+    },
+    {
+      "id": "i94lbhx7",
+      "name": "我邀请的人",
+      "icon": "lucide:user-plus",
+      "type": "url",
+      "data": "https://linux.do/my/invited/redeemed"
     }
   ],
   "collapsed": false,
